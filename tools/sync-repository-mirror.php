@@ -44,6 +44,28 @@ function writeFile(string $root, string $relative, string $bytes): void
     if (file_put_contents($path, $bytes, LOCK_EX) === false) fail('staging file cannot be written');
 }
 
+function verifyEd25519(string $signature, string $bytes, string $public): bool
+{
+    if (strlen($signature) !== 64 || strlen($public) !== 32) return false;
+    $prefix = sys_get_temp_dir() . '/modulnest-ed25519-' . bin2hex(random_bytes(6));
+    $publicPath = $prefix . '.pub';
+    $signaturePath = $prefix . '.sig';
+    $payloadPath = $prefix . '.data';
+    $der = hex2bin('302a300506032b6570032100') . $public;
+    $pem = "-----BEGIN PUBLIC KEY-----\n" . chunk_split(base64_encode($der), 64, "\n") . "-----END PUBLIC KEY-----\n";
+    file_put_contents($publicPath, $pem, LOCK_EX);
+    file_put_contents($signaturePath, $signature, LOCK_EX);
+    file_put_contents($payloadPath, $bytes, LOCK_EX);
+    exec(implode(' ', array_map('escapeshellarg', [
+        'openssl', 'pkeyutl', '-verify', '-pubin', '-inkey', $publicPath,
+        '-rawin', '-in', $payloadPath, '-sigfile', $signaturePath,
+    ])), $output, $status);
+    @unlink($publicPath);
+    @unlink($signaturePath);
+    @unlink($payloadPath);
+    return $status === 0;
+}
+
 $options = getopt('', ['source::', 'target:']);
 $source = rtrim((string) ($options['source'] ?? 'https://raw.githubusercontent.com/ChobitsChii/ModulNest-Modules/main'), '/');
 $target = rtrim((string) ($options['target'] ?? ''), '/');
@@ -56,7 +78,7 @@ $signature = json_decode($signatureBytes, true, 8, JSON_THROW_ON_ERROR);
 if (($signature['key_id'] ?? '') !== ROOT_KEY_ID) fail('unexpected root key');
 $rootPublic = base64_decode(TRUSTED_KEYS[ROOT_KEY_ID], true);
 $rootSignature = base64_decode((string) ($signature['signature'] ?? ''), true);
-if (!is_string($rootPublic) || !is_string($rootSignature) || !sodium_crypto_sign_verify_detached($rootSignature, $rootBytes, $rootPublic)) fail('invalid root signature');
+if (!is_string($rootPublic) || !is_string($rootSignature) || !verifyEd25519($rootSignature, $rootBytes, $rootPublic)) fail('invalid root signature');
 $sequence = $root['sequence'] ?? null;
 if (!is_int($sequence) || $sequence < 1 || !is_array($root['modules'] ?? null)) fail('invalid catalog root');
 
@@ -92,7 +114,7 @@ foreach ($root['modules'] as $reference) {
         $public = isset(TRUSTED_KEYS[$keyId]) ? base64_decode(TRUSTED_KEYS[$keyId], true) : false;
         $packageSignature = base64_decode((string) ($release['signature'] ?? ''), true);
         if (!is_string($public) || !isset($authorized[$keyId]) || !hash_equals($authorized[$keyId], hash('sha256', $public))
-            || !is_string($packageSignature) || !sodium_crypto_sign_verify_detached($packageSignature, $packageBytes, $public)
+            || !is_string($packageSignature) || !verifyEd25519($packageSignature, $packageBytes, $public)
         ) fail('package signature is invalid or unauthorized');
         writeFile($stage, $packagePath, $packageBytes);
     }
