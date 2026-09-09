@@ -1,4 +1,4 @@
 {
     "key_id": "modulnest-root-2026-01",
-    "signature": "qwVas+3FmaEIKh7HD+3/S43A/z83LEchWESumeCIEUVFdh8bpcnqeYMBJ2RVaw53Odf1L34PJBc7uXKJ+AKVCg=="
+    "signature": "rf9y5iU+Dfs6a6Y6ADc1b6QO73J/iZVbck3S0iR+948df5s4xaQlwSp6LFTV0HnMARnFryXoucX7Jv3m/S7iDg=="
 }

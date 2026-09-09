@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "catalog_id": "modulnest.official",
-    "sequence": 2,
-    "generated_at": "2026-09-09T03:02:00+00:00",
+    "sequence": 3,
+    "generated_at": "2026-09-09T06:55:20+00:00",
     "expires_at": "2027-09-09T23:59:59+00:00",
     "signing_keys": [
         {
@@ -55,12 +55,12 @@
         {
             "id": "modulnest.dashboard",
             "path": "catalog/v1/modules/modulnest.dashboard.json",
-            "sha256": "1982060bd2f567c728d5bc3fa2b531ea593b72b7cf253c70848bea81c61763b1"
+            "sha256": "9c212d55f50293526870f76e858837be26dd4732ff78c77d17a86ebba4a2f637"
         },
         {
             "id": "modulnest.sneak-preview",
             "path": "catalog/v1/modules/modulnest.sneak-preview.json",
-            "sha256": "e9d3fa83362402357bac6b145d3779aed99576273dfd4f5385b0ff0628d4d9bf"
+            "sha256": "3c6de7c8f50e10c1fbb730645287c25e73ee91dc49e9520a01fb4d86b383eff9"
         },
         {
             "id": "modulnest.tools",

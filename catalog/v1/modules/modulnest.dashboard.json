@@ -68,10 +68,6 @@
             {
                 "key": "modulnest.dashboard_001_baseline",
                 "checksum": "978b1503c779e3cc95d2b5f91141d7a5daecf672dfa8188cfa90e88e7187e6c6"
-            },
-            {
-                "key": "modulnest.dashboard_002_storage_paths",
-                "checksum": "c6029b3498f13ad7921ec1e91bab97566b69d9f82daf0c29338afb538b297322"
             }
         ]
     },
