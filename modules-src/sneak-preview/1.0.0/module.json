@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.sneak-preview",
+  "name": "Sneak Preview",
+  "description": "Öffentliche Sneak-Preview-Liste mit Administration und optionaler TMDB-Anbindung.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [{"name": "ModulNest contributors"}],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "sneak-preview",
+  "access_level": "public",
+  "requires": {"core": ">=2.0.0-alpha.1 <3.0.0", "php": ">=8.3.0", "extensions": ["pdo", "curl"]},
+  "entrypoint": {"class": "ModulNest\\SneakPreview\\SneakPreviewModule", "file": "src/SneakPreviewModule.php"},
+  "autoload": {"psr4": {"ModulNest\\SneakPreview\\": "src/"}},
+  "dependencies": {},
+  "optional_dependencies": {},
+  "conflicts": {},
+  "migrations": {"path": "migrations"},
+  "views": {"path": "views"},
+  "capabilities": {"data_portability": "ModulNest\\SneakPreview\\SneakPreviewDataPortabilityProvider"},
+  "data": {
+    "schema_version": 1,
+    "compatible_schema": "=1",
+    "ownership": {
+      "tables": ["sneak_preview_entries", "sneak_preview_settings"],
+      "settings": [],
+      "storage": ["posters"],
+      "uploads": [],
+      "jobs": []
+    }
+  }
+}

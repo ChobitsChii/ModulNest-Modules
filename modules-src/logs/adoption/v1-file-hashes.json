@@ -1,0 +1,6 @@
+{
+  "app/Modules/Logs/LogsAdminNavigationProvider.php": "2a2ccaae0ce060a373675eb4fccb0519914a8984930ef4bb6f4f12b67dabde17",
+  "app/Modules/Logs/LogsController.php": "c44ad32e4b91bb73b3097d65b7aec5dc0e08a2bf1ebc275f8aa9f0ad2a63a515",
+  "app/Modules/Logs/LogsModule.php": "0c1cc841b267f919a8c091bcdb1a18206431827f78d78343f6fd706137153a94",
+  "app/Views/logs/index.php": "4b948cc16c1ed70e53d222785f2a5ad7833bf3f8626f95e24c12d722fbcdbb3c"
+}

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.dashboard",
+  "name": "Dashboard",
+  "description": "Persönliches Dashboard mit Links, Ordnern, Widgets, Aufgaben und Notizen.",
+  "version": "1.3.0",
+  "license": "MIT",
+  "authors": [{"name": "ModulNest contributors"}],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "dashboard",
+  "access_level": "user",
+  "requires": {"core": ">=2.0.0-alpha.1 <3.0.0", "php": ">=8.3.0", "extensions": ["pdo", "curl", "fileinfo"]},
+  "entrypoint": {"class": "ModulNest\\Dashboard\\DashboardModule", "file": "src/DashboardModule.php"},
+  "autoload": {"psr4": {"ModulNest\\Dashboard\\": "src/"}},
+  "dependencies": {},
+  "optional_dependencies": {},
+  "conflicts": {},
+  "migrations": {"path": "migrations"},
+  "views": {"path": "views"},
+  "capabilities": {"data_portability": "ModulNest\\Dashboard\\DashboardDataPortabilityProvider"},
+  "data": {
+    "schema_version": 1,
+    "compatible_schema": "=1",
+    "ownership": {
+      "tables": ["dashboard_link_folders", "dashboard_links", "dashboard_tasks", "dashboard_notes", "dashboard_widgets"],
+      "settings": [],
+      "storage": ["favicons"],
+      "uploads": [],
+      "jobs": []
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.data-portability",
+  "name": "Export / Import",
+  "description": "Optionale Oberfläche für capability-basierte Modul-Datenexporte und -importe.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ModulNest contributors"
+    }
+  ],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "data-portability",
+  "access_level": "admin",
+  "requires": {
+    "core": ">=2.0.0-alpha.1 <3.0.0",
+    "php": ">=8.3.0",
+    "extensions": [
+      "pdo",
+      "zip"
+    ]
+  },
+  "entrypoint": {
+    "class": "ModulNest\\DataPortability\\DataPortabilityModule",
+    "file": "src/DataPortabilityModule.php"
+  },
+  "autoload": {
+    "psr4": {
+      "ModulNest\\DataPortability\\": "src/"
+    }
+  },
+  "dependencies": {},
+  "optional_dependencies": {
+    "modulnest.wiki": ">=1.0.0",
+    "modulnest.news": ">=1.0.0"
+  },
+  "conflicts": {},
+  "views": {
+    "path": "views"
+  },
+  "data": {
+    "schema_version": 0,
+    "compatible_schema": "=0",
+    "ownership": {
+      "tables": [],
+      "settings": [],
+      "storage": [
+        "exports",
+        "imports"
+      ],
+      "uploads": [],
+      "jobs": []
+    }
+  }
+}

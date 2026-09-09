@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.tools",
+  "name": "Tools",
+  "description": "Hilfs-, Entwickler-, Netzwerk- und Speech-to-Text-Werkzeuge.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [{"name": "ModulNest contributors"}],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "tools",
+  "access_level": "user",
+  "requires": {"core": ">=2.0.0-alpha.1 <3.0.0", "php": ">=8.3.0", "extensions": ["pdo", "curl", "fileinfo"]},
+  "entrypoint": {"class": "ModulNest\\Tools\\ToolsModule", "file": "src/ToolsModule.php"},
+  "autoload": {"psr4": {"ModulNest\\Tools\\": "src/"}},
+  "dependencies": {},
+  "optional_dependencies": {},
+  "conflicts": {},
+  "views": {"path": "views"},
+  "assets": {"path": "assets"},
+  "data": {
+    "schema_version": 0,
+    "compatible_schema": "=0",
+    "ownership": {
+      "tables": [],
+      "settings": [],
+      "storage": ["speech"],
+      "uploads": ["speech/uploads"],
+      "jobs": ["speech/jobs", "speech/wav"]
+    }
+  }
+}

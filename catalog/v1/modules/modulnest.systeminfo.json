@@ -1,0 +1,64 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.systeminfo",
+    "name": "Systeminfo",
+    "description": "Systeminformationen, Modulstatus und \u00fcbersichtlichere Core-Healthchecks ohne eigene Diagnosedaten.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.1.0",
+            "date": "2026-09-07",
+            "changes": [
+                "Als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                "Anzeige mit den gemeinsamen Core-Healthchecks und dem v2-Modulstatus verbunden."
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-05-08",
+            "changes": [
+                "Erste \u00f6ffentliche Modulversion f\u00fcr gesch\u00fctzte Systeminformationen und Laufzeitdiagnose."
+            ]
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/Systeminfo/SysteminfoController.php": "fe4136f1a1e5dfd31790590db4dbb8e173670c9dfb6618e8059335f6c04b8cf0",
+            "app/Modules/Systeminfo/SysteminfoModule.php": "2fea34e40622fe26c4163127c57c3663cd9b831eefd390e977733cba66ad531c",
+            "app/Views/systeminfo/index.php": "bcc3585f9c22cc8dec9c8ac567016f9eb78ddd831bfb64fdf59694831026d328"
+        },
+        "baseline_migrations": []
+    },
+    "releases": [
+        {
+            "version": "1.1.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                    "Anzeige mit den gemeinsamen Core-Healthchecks und dem v2-Modulstatus verbunden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 0,
+            "package": {
+                "location": "packages/modulnest.systeminfo/1.1.0/modulnest.systeminfo-1.1.0.zip",
+                "size": 8874,
+                "sha256": "4d5a5abebb5f152b7aef8ba5c48a856fd9c4a8903cb92ab27c8aaba906a2be5b"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "nHpMiuJJBe0i6Uuko4y//0Qh+WHUTFgwEgi3oQSJ/hAuqu76JXQXx4dpcIBbPM9XDoEO3rIzyjmPB6u5Wb1EBA==",
+            "published_at": "2026-09-07T12:00:00+00:00"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.data-portability",
+    "name": "Export / Import",
+    "description": "Optionale Oberfl\u00e4che f\u00fcr capability-basierte Modul-Datenexporte und -importe.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.3.0",
+            "date": "2026-09-08",
+            "changes": [
+                "Oberfl\u00e4che als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                "Fachprovider werden dynamisch \u00fcber den neutralen DataPortability-Capability-Vertrag ermittelt."
+            ]
+        },
+        {
+            "version": "1.2.1",
+            "date": "2026-05-13",
+            "changes": [
+                "Importhinweise und Beschreibungen des Importverhaltens korrigiert."
+            ]
+        },
+        {
+            "version": "1.2.0",
+            "date": "2026-05-13",
+            "changes": [
+                "Ersetzenden Importmodus neben dem zusammenf\u00fchrenden Import erg\u00e4nzt."
+            ]
+        },
+        {
+            "version": "1.1.0",
+            "date": "2026-05-12",
+            "changes": [
+                "Banking-Regeln und Filter vollst\u00e4ndig \u00fcbernommen.",
+                "Importvorschau und Sneak-Preview-Zusammenfassung verst\u00e4ndlicher dargestellt."
+            ]
+        },
+        {
+            "version": "1.0.1",
+            "date": "2026-05-12",
+            "changes": [
+                "Gro\u00dfe ZIP-Exporte werden gestreamt und das zul\u00e4ssige ZIP-Importvolumen wurde angehoben."
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-05-12",
+            "changes": [
+                "Erstes \u00f6ffentliches Export-/Import-Modul mit Vorschau und ZIP-Archivformat."
+            ]
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/DataPortability/DataPortabilityAdminNavigationProvider.php": "72b4c56b3b3277bc8c103eb28a2100ba1590a930177c180ded1459abedbd29d0",
+            "app/Modules/DataPortability/DataPortabilityController.php": "89d239f7a15bba7006e72bbe9dcdc5be3b52c15ac52892c5df811c5e04cb5e3c",
+            "app/Modules/DataPortability/DataPortabilityModule.php": [
+                "16b500d5496bfd8cbec0bcfcfe012f4ddfbca04d7974cfdc177802de2972a1a3",
+                "dd0259c4ba335b8ae1d00da6f5b078b8a849aeb3231b00ddd9617f4158973ce6"
+            ],
+            "app/Modules/DataPortability/DataPortabilityService.php": [
+                "62e42a79d2a4633253cba8c0f3b93805b2afd0c4813688de6f2b9a0ecde39efc",
+                "0dc37a4b68a38861531d1e31b32d5b567d581b46749109f60a42facfb26d9835"
+            ],
+            "app/Modules/DataPortability/DataPortabilityUserNavigationProvider.php": "dc2bbf48f441b27013553d32650cd7406f7491d890c85686b0b566effca6a6e4",
+            "app/Views/data-portability/admin.php": "2661b0233a7c984374b56392f57d77a5e9e23daac5c30b051378cedd50ee23de"
+        },
+        "baseline_migrations": []
+    },
+    "releases": [
+        {
+            "version": "1.3.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Oberfl\u00e4che als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                "changes": [
+                    "Oberfl\u00e4che als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                    "Fachprovider werden dynamisch \u00fcber den neutralen DataPortability-Capability-Vertrag ermittelt."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 0,
+            "package": {
+                "location": "packages/modulnest.data-portability/1.3.0/modulnest.data-portability-1.3.0.zip",
+                "size": 15171,
+                "sha256": "1ec5e56d7ecb6e129245c398263226ecd11899aad5211f1616d33c3a8794b5ff"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "VxL0PFFFR2p44eqmW4ST3NcSmmwP0es/7Kx4qd9wz5E/6px5k82TGh+CJP4Th74mtMot37Ny95fcVOEUgp6bAw==",
+            "published_at": "2026-09-08T12:00:00+00:00"
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.sneak-preview",
+    "name": "Sneak Preview",
+    "description": "\u00d6ffentliche Sneak-Preview-Liste mit Administration und optionaler TMDB-Anbindung.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.2.0",
+            "date": "2026-09-08",
+            "changes": [
+                "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "Poster in privaten, lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
+                "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
+            ]
+        },
+        {
+            "version": "1.1.0",
+            "date": "2026-05-13",
+            "changes": [
+                "Zusammenf\u00fchren und Ersetzen bestehender Sneak-Preview-Daten beim Import erg\u00e4nzt."
+            ]
+        },
+        {
+            "version": "1.0.1",
+            "date": "2026-05-12",
+            "changes": [
+                "Zusammenfassung der Sneak-Preview-Importvorschau verbessert."
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-05-12",
+            "changes": [
+                "Erste \u00f6ffentliche Modulversion mit Terminen, TMDB-Daten, Postern und Administration."
+            ]
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/SneakPreview/Database/Migrations/20260510_000104_sneak_preview_070_schema.php": "ff2a72317806b7a369ecf37504e75aaa9cfcc810c51060bd667394d6288d9efd",
+            "app/Modules/SneakPreview/Database/schema.sql": "fb86ee9db14baa35751409da554ca207aeec6323e33df1e79a1c8ce3705a0bd0",
+            "app/Modules/SneakPreview/SneakPreviewAdminNavigationProvider.php": "3042c95aa4d14cec873df09b70b63f3a619e21820e05b5b8f0b3b9ba2ca8b77e",
+            "app/Modules/SneakPreview/SneakPreviewController.php": "7b22001e3fce6ada408b493bf10ce7411134a21346437de0bd730eb90de1942f",
+            "app/Modules/SneakPreview/SneakPreviewModule.php": [
+                "479eaff8b79ec3f41739671299be067a9609324fc1efbdf91b2c73b289cceef9",
+                "ae38acf4d497d6788616bb4abc8a117e62844d72fa8d3a0fdc85b5e1e500160f"
+            ],
+            "app/Modules/SneakPreview/SneakPreviewRepository.php": "33fd9b4605d4a2a74f43bf321944c65b150e7f2b682b1f964016420bd22c9740",
+            "app/Modules/SneakPreview/SneakPreviewTmdbService.php": "69446592aabfb93b60965125ddfc65cafe32ae9e4b923dd75aadb9a9fba58b93",
+            "app/Modules/DataPortability/Providers/SneakPreviewDataPortabilityProvider.php": "9f05254aea56af0990c3d7d3efcff5859f6c57e284f2c8bf746cb0395c8e91af",
+            "app/Views/sneak-preview/admin.php": "5d5608bc2d39c86dcf2984c2919b666d079ae9163259e10b49463e0c745f4598",
+            "app/Views/sneak-preview/form.php": "8faa1f258c1abd0cfc3abaf879419190d7a15bf33528c0cdc05be9faee0c6f6e",
+            "app/Views/sneak-preview/index.php": "382ec9714a1bb27644fab3ad7ad926e5a38402d943b44b59eae7d7883792d967",
+            "app/Views/sneak-preview/partials/form-fields.php": "8fee0df072b9a21ca22481504927307226f621b1f6ad3b94043c74013fcc36c1",
+            "app/Views/sneak-preview/partials/table.php": "93c8e0074c29ce28cb1532829de924e10f3f9e3e4ab0232a5bb7f25fd2273ccb",
+            "app/Views/sneak-preview/settings.php": "87f8cc4deaa0cd90f06253f670f0cd3d5ecc0dd4ce66a0ad796c3958910aca5f"
+        },
+        "baseline_migrations": [
+            {
+                "key": "modulnest.sneak-preview_001_baseline",
+                "checksum": "2e53f58a3b7bc3d211e097141266f9aabf72695a2721d325fe6460b4212f68a7"
+            },
+            {
+                "key": "modulnest.sneak-preview_002_storage_paths",
+                "checksum": "24dfdea081441e3b28a2b88d558a3230ad4fbb8642b14386561f21ce69aeeff0"
+            }
+        ]
+    },
+    "releases": [
+        {
+            "version": "1.2.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                    "Poster in privaten, lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
+                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 2,
+            "package": {
+                "location": "packages/modulnest.sneak-preview/1.2.0/modulnest.sneak-preview-1.2.0.zip",
+                "size": 27925,
+                "sha256": "5d6e98c2b1fec75ba43c11f3736f780a6620a1eb0f49bf4ec3e7755d1ac02a5b"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "+vM7b8jsfm1pto9rNkhgm8tKO0ODBTY5ObEcK5nEZZM73V3GwvX72cvW3etiOtrd+R6sEXE7yI9L0+AsI30DCw==",
+            "published_at": "2026-09-08T12:00:00+00:00"
+        }
+    ]
+}

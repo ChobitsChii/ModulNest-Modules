@@ -1,0 +1,85 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.homepage",
+    "name": "Startseite",
+    "description": "Konfigurierbare Root-Startseite mit zielgruppengesteuerten Inhaltsbl\u00f6cken.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.1.0",
+            "date": "2026-09-08",
+            "changes": [
+                "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "Root-Seiten-Funktion \u00fcber die neutrale Core-Capability `root_page` angebunden."
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-05-15",
+            "changes": [
+                "Erste \u00f6ffentliche Modulversion mit administrierbaren Markdown-, Feature- und Modulbl\u00f6cken.",
+                "Zielgruppensichtbarkeit, flexible Blockbreiten und sicherer unver\u00f6ffentlichter Fallback eingef\u00fchrt."
+            ]
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/Homepage/Database/Migrations/20260514_000105_homepage_schema.php": "f17ae3f29918cb032216c6b38d8761779a51f67180536ecf1441bdc7b34e9bd3",
+            "app/Modules/Homepage/Database/Migrations/20260514_000110_homepage_block_flexibility.php": "23fc58b5cffdef518905b230730dee655f48adcd20c10a4cd0398035e4f93eb3",
+            "app/Modules/Homepage/Database/Migrations/20260514_000115_homepage_button_layout.php": "2df38ac7dbb5e14812fd4775b5502b68dbc3c4c1552655a6422fbf4a6a20dc84",
+            "app/Modules/Homepage/Database/Migrations/20260514_000120_homepage_show_title.php": "722d90cf8a331e6bf74ab2b433c231ca5246747cbfa6ab752ddffce234f1522d",
+            "app/Modules/Homepage/Database/schema.sql": "a5a981a0c8c7e95938b7f844cc17d35b4a309eace6fbfc79b3b1e525b3af90fc",
+            "app/Modules/Homepage/HomepageAdminNavigationProvider.php": "2407546b9612cb82edc6e840add8fab53c58d4ba07485da4bfb0f49a31f58980",
+            "app/Modules/Homepage/HomepageController.php": "15fe021ab6f8ba7d29e943f73d0bad5166265385bf80270796d704da4ec997c0",
+            "app/Modules/Homepage/HomepageModule.php": [
+                "1b7954138ba0a175520bb0c20c92c54d603f1eed1525e9a5a4d99c46bd557026",
+                "909e1be32ec1fa68f33fc1c8b643400dcc763946d91ed4e0c4ce9b2c06ea8a11"
+            ],
+            "app/Modules/Homepage/HomepageRenderer.php": [
+                "399de09392256511cfb84a8307cef1c2db7222d56a11e9b4f246d407045e69b3",
+                "03ad34e8037a7d2553e086bfba07c1ff3921bb40de3ecda8b22cb04291033a60"
+            ],
+            "app/Modules/Homepage/HomepageRepository.php": "7e9be106b57c68e29a83f50cbc824ab1ca6158ad89c69b9743a94d380a7ef922",
+            "app/Views/homepage/admin.php": "54c5204bd8924706ecf259a0a0e020344436d2efa287b5bbe2f8becc36f27ecf",
+            "app/Views/homepage/render.php": "bee07b30a7a6ad12b25b46fd4d518c1fc9825b7e0fe3978d1029b947c4225ee9"
+        },
+        "baseline_migrations": [
+            {
+                "key": "modulnest.homepage_001_baseline",
+                "checksum": "450fb4c8c59a06d3fa6b8601e3eb158415867806672b57e4bdebd84855fca160"
+            }
+        ]
+    },
+    "releases": [
+        {
+            "version": "1.1.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                    "Root-Seiten-Funktion \u00fcber die neutrale Core-Capability `root_page` angebunden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 1,
+            "package": {
+                "location": "packages/modulnest.homepage/1.1.0/modulnest.homepage-1.1.0.zip",
+                "size": 22659,
+                "sha256": "1f829d031b5b4bf14b3fd533929148fc06763b04a6ecd4e1a940f0d8ab200f89"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "Tv1mz+bvA4tCG48bvH/Q2HQCEBFwGQsyFb9rqfntnK3nUJgLVrOm6aQizn3GYbpeLTDr4By0iA4qT4caH5lYCw==",
+            "published_at": "2026-09-08T12:00:00+00:00"
+        }
+    ]
+}

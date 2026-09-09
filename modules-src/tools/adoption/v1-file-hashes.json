@@ -1,0 +1,14 @@
+{
+  "app/Modules/Tools/ToolsAdminNavigationProvider.php": "d0454caac008fd5971384de815a58a385520f26ece959e3f9440b0fe26fd4c5b",
+  "app/Modules/Tools/ToolsController.php": "4e7ae84db67c32c9254f5af9bef854887340d947e9d60e0defc34c6341e51e18",
+  "app/Modules/Tools/ToolsModule.php": "deff512d393f5834f725cf647db4338c0e6042d1daf93f9c7726d1a26eb66ae8",
+  "app/Modules/Tools/ToolsNetworkService.php": "afae4a074746c2b164aca40621cc590be368d48ed42378a0b4e7e37e225f2deb",
+  "app/Modules/Tools/ToolsRegistry.php": "f4613f31250931d4c851f6c406bd9f0b1103eeb9781dd27624ff88b7291faee9",
+  "app/Modules/Tools/ToolsSpeechService.php": "b6f5a95f57543b4c1ff536466c1a7396a9eef3d926c7780fc21c916dcffabb25",
+  "app/Modules/Tools/ToolsSubnavigationProvider.php": "4db7164011d3eabf62b9754099d49d03bfa30fc83c63822e9dc8fc804016afb5",
+  "app/Views/tools/admin.php": "da26d1091d2a0292d840821c2f0ffbd91cb15ffd6f7387617c42dc947b9e042e",
+  "app/Views/tools/index.php": "91a80770ee2e05f5610d7c26d0ead6e18a100b480c4db77276d1f55897de69b0",
+  "app/Views/tools/partials/public-tool-card.php": "d68643fccd4d9bc1b326f98705f6359858842b3bfb3bfd509b2c4736a8742571",
+  "bin/tools-speech-worker.php": "0b3ff21494d65cb7ac527d7f9196cf8c8b0ecc27775764b5cfb1149c59311434",
+  "public/assets/js/tools.js": "38094289c222357be96282788b23e80acbd3eb1d7cbbef2221f157b033746667"
+}

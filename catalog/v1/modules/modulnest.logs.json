@@ -1,0 +1,70 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.logs",
+    "name": "Logs",
+    "description": "Sicherer Admin-Viewer f\u00fcr Core-Logs mit pr\u00e4zisierter Paketstatusanzeige.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.2.0",
+            "date": "2026-09-07",
+            "changes": [
+                "Als eigenst\u00e4ndiges Modul-v2-Paket ohne eigene Diagnosedaten ver\u00f6ffentlicht."
+            ]
+        },
+        {
+            "version": "1.1.0",
+            "date": "2026-09-02",
+            "changes": [
+                "Anzeige auf zentral verwaltete t\u00e4gliche Logdateien und Rotation umgestellt."
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-05-12",
+            "changes": [
+                "Erste \u00f6ffentliche Modulversion mit gesch\u00fctzter Admin-Logansicht."
+            ]
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/Logs/LogsAdminNavigationProvider.php": "2a2ccaae0ce060a373675eb4fccb0519914a8984930ef4bb6f4f12b67dabde17",
+            "app/Modules/Logs/LogsController.php": "c44ad32e4b91bb73b3097d65b7aec5dc0e08a2bf1ebc275f8aa9f0ad2a63a515",
+            "app/Modules/Logs/LogsModule.php": "0c1cc841b267f919a8c091bcdb1a18206431827f78d78343f6fd706137153a94",
+            "app/Views/logs/index.php": "4b948cc16c1ed70e53d222785f2a5ad7833bf3f8626f95e24c12d722fbcdbb3c"
+        },
+        "baseline_migrations": []
+    },
+    "releases": [
+        {
+            "version": "1.2.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket ohne eigene Diagnosedaten ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket ohne eigene Diagnosedaten ver\u00f6ffentlicht."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 0,
+            "package": {
+                "location": "packages/modulnest.logs/1.2.0/modulnest.logs-1.2.0.zip",
+                "size": 8339,
+                "sha256": "631501935aea2803d40a629ff2134cdb11c7f25c16ec44262e278e787c7a6897"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "/7j83XJMLuyJyoaamd8PiSQaIXYdquv/fhPZbK4ZXBwy+kAcWfmPTEOv54yaz/QMyiZb6iPEiq5M+2aqikKBDQ==",
+            "published_at": "2026-09-07T12:00:00+00:00"
+        }
+    ]
+}

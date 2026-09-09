@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.logs",
+  "name": "Logs",
+  "description": "Sicherer Admin-Viewer für Core-Logs mit präzisierter Paketstatusanzeige.",
+  "version": "1.2.0",
+  "license": "MIT",
+  "authors": [{"name": "ModulNest contributors"}],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "logs",
+  "access_level": "admin",
+  "requires": {"core": ">=2.0.0-alpha.1 <3.0.0", "php": ">=8.3.0", "extensions": []},
+  "entrypoint": {"class": "ModulNest\\Logs\\LogsModule", "file": "src/LogsModule.php"},
+  "autoload": {"psr4": {"ModulNest\\Logs\\": "src/"}},
+  "dependencies": {},
+  "optional_dependencies": {},
+  "conflicts": {},
+  "views": {"path": "views"},
+  "data": {"schema_version": 0, "compatible_schema": "=0", "ownership": {"tables": [], "settings": [], "storage": [], "uploads": [], "jobs": []}}
+}

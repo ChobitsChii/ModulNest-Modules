@@ -1,0 +1,14 @@
+{
+    "app/Modules/DataPortability/DataPortabilityAdminNavigationProvider.php": "72b4c56b3b3277bc8c103eb28a2100ba1590a930177c180ded1459abedbd29d0",
+    "app/Modules/DataPortability/DataPortabilityController.php": "89d239f7a15bba7006e72bbe9dcdc5be3b52c15ac52892c5df811c5e04cb5e3c",
+    "app/Modules/DataPortability/DataPortabilityModule.php": [
+        "16b500d5496bfd8cbec0bcfcfe012f4ddfbca04d7974cfdc177802de2972a1a3",
+        "dd0259c4ba335b8ae1d00da6f5b078b8a849aeb3231b00ddd9617f4158973ce6"
+    ],
+    "app/Modules/DataPortability/DataPortabilityService.php": [
+        "62e42a79d2a4633253cba8c0f3b93805b2afd0c4813688de6f2b9a0ecde39efc",
+        "0dc37a4b68a38861531d1e31b32d5b567d581b46749109f60a42facfb26d9835"
+    ],
+    "app/Modules/DataPortability/DataPortabilityUserNavigationProvider.php": "dc2bbf48f441b27013553d32650cd7406f7491d890c85686b0b566effca6a6e4",
+    "app/Views/data-portability/admin.php": "2661b0233a7c984374b56392f57d77a5e9e23daac5c30b051378cedd50ee23de"
+}

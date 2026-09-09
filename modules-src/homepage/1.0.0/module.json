@@ -1,0 +1,62 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.homepage",
+  "name": "Startseite",
+  "description": "Konfigurierbare Root-Startseite mit zielgruppengesteuerten Inhaltsblöcken.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ModulNest contributors"
+    }
+  ],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "homepage",
+  "access_level": "admin",
+  "requires": {
+    "core": ">=2.0.0-alpha.1 <3.0.0",
+    "php": ">=8.3.0",
+    "extensions": [
+      "pdo"
+    ]
+  },
+  "entrypoint": {
+    "class": "ModulNest\\Homepage\\HomepageModule",
+    "file": "src/HomepageModule.php"
+  },
+  "autoload": {
+    "psr4": {
+      "ModulNest\\Homepage\\": "src/"
+    }
+  },
+  "dependencies": {},
+  "optional_dependencies": {},
+  "conflicts": {},
+  "migrations": {
+    "path": "migrations"
+  },
+  "views": {
+    "path": "views"
+  },
+  "capabilities": {
+    "root_page": "ModulNest\\Homepage\\HomepageRenderer"
+  },
+  "data": {
+    "schema_version": 1,
+    "compatible_schema": "=1",
+    "ownership": {
+      "tables": [
+        "homepage_block_buttons",
+        "homepage_block_items",
+        "homepage_blocks"
+      ],
+      "settings": [
+        "homepage.is_published"
+      ],
+      "storage": [],
+      "uploads": [],
+      "jobs": []
+    }
+  }
+}

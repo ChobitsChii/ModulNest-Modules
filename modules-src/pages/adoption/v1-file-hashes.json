@@ -1,0 +1,19 @@
+{
+    "app/Modules/Pages/Database/Migrations/20260521_000100_pages_schema.php": "1b74426a174c8eef10eef45d1926bde41035034a708eee026fc765d0c2efa360",
+    "app/Modules/Pages/Database/Migrations/20260521_000200_pages_header_footer_columns.php": "9dee56a1dd8d5552c868693d8ad6bc31fbc545c1b3019441eeb271ffebbfd32a",
+    "app/Modules/Pages/Database/schema.sql": "1322725c3540c57ab64e06d764e7d4524c66289ec74c6716faad06c9b6cd4faa",
+    "app/Modules/Pages/Database/seeds.sql": "76a3a1986f65b11f013923079f9959da6420bdc9e0b995502f5394873e278b34",
+    "app/Modules/Pages/PagesAdminNavigationProvider.php": "2e300e2e581ce2680cca898367e40518f317ebbb945f300fdb73fee3aae090ec",
+    "app/Modules/Pages/PagesController.php": "380c6e12c364961c057276f6eadd1f108aded8a62033236b6fc11beb858ebd00",
+    "app/Modules/Pages/PagesModule.php": [
+        "08d94345e5cd75e81c129c990ea373bdb7b9ce1dc534a0f6aa44c5b020cf89a7",
+        "34b2070ecc7bfc0a0cc441154507dd00d4c575eb52c704e9bc621a819bcf3008"
+    ],
+    "app/Modules/Pages/PagesRepository.php": [
+        "e32adac62e8db1bc0245c87e06608309240e864d139e316806d976f30bb2b2ed",
+        "e858f1757296ef1cccc9077a020a080e438b5c2a68911d71648f658b97465ba7"
+    ],
+    "app/Views/pages/admin.php": "1c718ea16796f148a9a790e1707b279419f8949affbee3b43b03e845923a6e17",
+    "app/Views/pages/index.php": "ea768ba8792a64402d395981d972776658fbbd94fb1e3c85312cecc63e9d8875",
+    "app/Views/pages/show.php": "873422bda50e80a38ae77734fb1ae1da8029b2951b912a48392f6bad34bde834"
+}

@@ -1,0 +1,84 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.pages",
+    "name": "Pages",
+    "description": "\u00d6ffentliche Markdown-Seiten mit Adminverwaltung und Header-/Footer-Integration.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.1.0",
+            "date": "2026-09-08",
+            "changes": [
+                "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "Header- und Footer-Integration \u00fcber die neutrale Page-Link-Capability angebunden."
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-05-21",
+            "changes": [
+                "Erste \u00f6ffentliche Modulversion f\u00fcr Markdown-Seiten und Microsites.",
+                "Gruppierte Header-Navigation, Footer-Links und Admin-CRUD eingef\u00fchrt."
+            ]
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/Pages/Database/Migrations/20260521_000100_pages_schema.php": "1b74426a174c8eef10eef45d1926bde41035034a708eee026fc765d0c2efa360",
+            "app/Modules/Pages/Database/Migrations/20260521_000200_pages_header_footer_columns.php": "9dee56a1dd8d5552c868693d8ad6bc31fbc545c1b3019441eeb271ffebbfd32a",
+            "app/Modules/Pages/Database/schema.sql": "1322725c3540c57ab64e06d764e7d4524c66289ec74c6716faad06c9b6cd4faa",
+            "app/Modules/Pages/Database/seeds.sql": "76a3a1986f65b11f013923079f9959da6420bdc9e0b995502f5394873e278b34",
+            "app/Modules/Pages/PagesAdminNavigationProvider.php": "2e300e2e581ce2680cca898367e40518f317ebbb945f300fdb73fee3aae090ec",
+            "app/Modules/Pages/PagesController.php": "380c6e12c364961c057276f6eadd1f108aded8a62033236b6fc11beb858ebd00",
+            "app/Modules/Pages/PagesModule.php": [
+                "08d94345e5cd75e81c129c990ea373bdb7b9ce1dc534a0f6aa44c5b020cf89a7",
+                "34b2070ecc7bfc0a0cc441154507dd00d4c575eb52c704e9bc621a819bcf3008"
+            ],
+            "app/Modules/Pages/PagesRepository.php": [
+                "e32adac62e8db1bc0245c87e06608309240e864d139e316806d976f30bb2b2ed",
+                "e858f1757296ef1cccc9077a020a080e438b5c2a68911d71648f658b97465ba7"
+            ],
+            "app/Views/pages/admin.php": "1c718ea16796f148a9a790e1707b279419f8949affbee3b43b03e845923a6e17",
+            "app/Views/pages/index.php": "ea768ba8792a64402d395981d972776658fbbd94fb1e3c85312cecc63e9d8875",
+            "app/Views/pages/show.php": "873422bda50e80a38ae77734fb1ae1da8029b2951b912a48392f6bad34bde834"
+        },
+        "baseline_migrations": [
+            {
+                "key": "modulnest.pages_001_baseline",
+                "checksum": "b9e95c9ee46dc2d63b1cb5af1d4f658a56c954e309a8498244ed8e0bbb18a4de"
+            }
+        ]
+    },
+    "releases": [
+        {
+            "version": "1.1.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                    "Header- und Footer-Integration \u00fcber die neutrale Page-Link-Capability angebunden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 1,
+            "package": {
+                "location": "packages/modulnest.pages/1.1.0/modulnest.pages-1.1.0.zip",
+                "size": 13894,
+                "sha256": "a695dfb6df4554bbe134fb50091efd686eb54f0d838a55593dce36b49d77b524"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "OKKQv9uIPvRPmA9KslqVqbI020F16rVSwHHRKp6E7XIUmDlkGrS9L+we6BPQVdCZbuu9X/9i2C0YhN1Ss98jDQ==",
+            "published_at": "2026-09-08T12:00:00+00:00"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+  "app/Modules/Dashboard/DashboardController.php": "aecb19ab2002437fe8edb891ea93dadb502e23eae9fd0720c13477f37d47b50c",
+  "app/Modules/Dashboard/DashboardModule.php": [
+    "126046403d93bfa61b8b5bf8e39b3f0144263f2f0bd15925a33822d353b3a7f7",
+    "3be45b1d4a3fad55fb7c8404bd26187670c31028394d54ad7e36cbee5c2c7406"
+  ],
+  "app/Modules/Dashboard/DashboardRepository.php": "2f760204a7f89fbf26edd4835fa720c2ac52c7bb09313b988b447cba8493c4f0",
+  "app/Modules/Dashboard/Database/Migrations/20260510_000102_dashboard_070_schema.php": "d6ac236acd915c3be1942aa175f9ff8f3a8e48ced94d911a1a78d9b06ec86cc8",
+  "app/Modules/Dashboard/Database/Migrations/20260519_000130_dashboard_archive_tasks_notes.php": "cf23afb4f45114d376201b9f944119e9c926ac943e49208f4f3ac88d97b8ff8a",
+  "app/Modules/Dashboard/Database/schema.sql": "22ede2a62e3f684df72bae4d53ab7474c5e31a5c9d9600544557403266d6a9f8",
+  "app/Modules/DataPortability/Providers/DashboardDataPortabilityProvider.php": "27d570dc441dab23506f26490c30ded739e6bd1005daddba5ef25b44b5150ddc",
+  "app/Views/dashboard/index.php": "612a041634c18b38aada4bb661053aff39644d6948d46199919a018846bd3056"
+}

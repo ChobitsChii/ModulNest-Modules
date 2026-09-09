@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.news",
+  "name": "News",
+  "description": "Öffentliche News und Updates mit Admin-CRUD, Markdown, Portabilität und verfeinerter Übersicht.",
+  "version": "1.2.0",
+  "license": "MIT",
+  "authors": [{"name": "ModulNest contributors"}],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "news",
+  "access_level": "public",
+  "requires": {"core": ">=2.0.0-alpha.1 <3.0.0", "php": ">=8.3.0", "extensions": ["pdo"]},
+  "entrypoint": {"class": "ModulNest\\News\\NewsModule", "file": "src/NewsModule.php"},
+  "autoload": {"psr4": {"ModulNest\\News\\": "src/"}},
+  "dependencies": {},
+  "optional_dependencies": {"modulnest.data-portability": ">=1.0.0"},
+  "conflicts": {},
+  "migrations": {"path": "migrations"},
+  "views": {"path": "views"},
+  "capabilities": {"data_portability": "ModulNest\\News\\NewsDataPortabilityProvider"},
+  "data": {"schema_version": 1, "compatible_schema": "=1", "ownership": {"tables": ["news_entries"], "settings": [], "storage": [], "uploads": [], "jobs": []}}
+}

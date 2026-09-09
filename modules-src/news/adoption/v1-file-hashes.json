@@ -1,0 +1,17 @@
+{
+  "app/Modules/News/Database/Migrations/20260510_000101_news_070_schema.php": "d6119bff80a902adce9f82a0379bc1a1cfab1d17bbfa7aeb83e7d29531acae0c",
+  "app/Modules/News/Database/schema.sql": "bb46137b11531693ed8517bcefc71712c0b87713c1b1256dc12e096d4579c78e",
+  "app/Modules/News/Database/seeds.sql": "305be39d9f69a7153227661a9bcf90a8f563ca6406a6564548dc37c2a7c9586c",
+  "app/Modules/News/NewsAdminNavigationProvider.php": "4f5c4039e604a24176e412d5d46e4c4d5cff51e04dbb75a800cc74707fdc2d92",
+  "app/Modules/News/NewsController.php": "c8d65dfd3c3f0ac8ec15f4340b628d1aa00120a29c0f0983e95549bba4c22e4d",
+  "app/Modules/News/NewsModule.php": [
+    "4d20c89b3e4978f960e5045b7249a93bb338ad1b7cd7874de30a9be2e9eec6ef",
+    "d6e1ff3572af482cd2c3381a300d95a14937780fdd660a9ad8e226447440cf41"
+  ],
+  "app/Modules/News/NewsRepository.php": "243aeb83735bc20bbae84c96dcb11bb16ac565354e4048ba26c0301372ea46a7",
+  "app/Views/news/admin-form.php": "46a4b199cdd94c11d5c43ee4d4dfc7db1bdb47e4aabfffd9b3bb427ffb74fcbd",
+  "app/Views/news/admin.php": "87e59d78dba9ce84ea78ff95f0c52b16df2a7cbdcda9b06b8fbb5e2b991e3c20",
+  "app/Views/news/index.php": "5613cd5b88daf8e82fa59c0b8c4e952a61a563cab332cd01bb10173119e07f3b",
+  "app/Views/news/show.php": "c2a7556cb568be800f99b582c9a59d4952e43b9791cf57c0732e3f2c7d1e6994",
+  "app/Modules/DataPortability/Providers/NewsDataPortabilityProvider.php": "a61c376ea5228ec8da391a93ad2ad71d7af525e6f094d8cc369bc230b7bb8a11"
+}

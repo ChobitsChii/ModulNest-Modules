@@ -1,0 +1,5 @@
+{
+  "app/Modules/Systeminfo/SysteminfoController.php": "fe4136f1a1e5dfd31790590db4dbb8e173670c9dfb6618e8059335f6c04b8cf0",
+  "app/Modules/Systeminfo/SysteminfoModule.php": "2fea34e40622fe26c4163127c57c3663cd9b831eefd390e977733cba66ad531c",
+  "app/Views/systeminfo/index.php": "bcc3585f9c22cc8dec9c8ac567016f9eb78ddd831bfb64fdf59694831026d328"
+}

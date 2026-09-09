@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "id": "modulnest.banking",
+  "name": "Banking",
+  "description": "Konten, Transaktionen, CSV-Import und wiederkehrende Buchungen.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [{"name": "ModulNest contributors"}],
+  "homepage": "https://github.com/ChobitsChii/ModulNest",
+  "repository": "https://github.com/ChobitsChii/ModulNest",
+  "route_prefix": "banking",
+  "access_level": "user",
+  "requires": {"core": ">=2.0.0-alpha.1 <3.0.0", "php": ">=8.3.0", "extensions": ["pdo", "mbstring"]},
+  "entrypoint": {"class": "ModulNest\\Banking\\BankingModule", "file": "src/BankingModule.php"},
+  "autoload": {"psr4": {"ModulNest\\Banking\\": "src/"}},
+  "dependencies": {},
+  "optional_dependencies": {"modulnest.data-portability": ">=1.0.0"},
+  "conflicts": {},
+  "migrations": {"path": "migrations"},
+  "views": {"path": "views"},
+  "capabilities": {"data_portability": "ModulNest\\Banking\\BankingDataPortabilityProvider"},
+  "data": {
+    "schema_version": 1,
+    "compatible_schema": "=1",
+    "ownership": {
+      "tables": [
+        "banking_migration_runs",
+        "banking_accounts",
+        "banking_categories",
+        "banking_import_batches",
+        "banking_transactions",
+        "banking_recurring_rules",
+        "banking_recurring_rule_conditions",
+        "banking_dashboard_cache"
+      ],
+      "settings": [],
+      "storage": [],
+      "uploads": [],
+      "jobs": []
+    }
+  }
+}
