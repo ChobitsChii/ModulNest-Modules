@@ -1,0 +1,74 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.fantasy-cards",
+    "name": "Fantasy Cards",
+    "description": "Digitales Fantasy-Sammelkarten-System f\u00fcr Sets, Karten und Booster.",
+    "version": "0.1.0-beta.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest Team"
+        }
+    ],
+    "homepage": "https://github.com/ChobitsChii/ModulNest",
+    "repository": "https://github.com/ChobitsChii/ModulNest",
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0",
+        "extensions": [
+            "pdo",
+            "mbstring",
+            "gd"
+        ]
+    },
+    "entrypoint": {
+        "class": "ModulNest\\FantasyCards\\FantasyCardsModule",
+        "file": "src/FantasyCardsModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\FantasyCards\\": "src/"
+        }
+    },
+    "dependencies": [],
+    "optional_dependencies": [],
+    "conflicts": [],
+    "migrations": {
+        "path": "migrations"
+    },
+    "views": {
+        "path": "views"
+    },
+    "assets": {
+        "path": "assets"
+    },
+    "route_prefix": "fantasy-cards",
+    "access_level": "user",
+    "data": {
+        "schema_version": 1,
+        "compatible_schema": "=1",
+        "ownership": {
+            "tables": [
+                "card_sets",
+                "cards",
+                "booster_types",
+                "user_booster_inventory",
+                "user_cards",
+                "fantasy_card_user_state",
+                "fantasy_card_booster_openings",
+                "fantasy_card_booster_opening_cards",
+                "fantasy_card_profile_settings",
+                "fantasy_card_profile_showcase_cards"
+            ],
+            "settings": [],
+            "storage": [
+                "storage/fantasy-cards"
+            ],
+            "uploads": [
+                "public/assets/fantasy-cards"
+            ],
+            "jobs": []
+        }
+    },
+    "channel": "beta"
+}

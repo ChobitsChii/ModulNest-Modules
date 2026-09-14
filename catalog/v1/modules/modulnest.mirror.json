@@ -1,0 +1,63 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.mirror",
+    "name": "Mirror Manager",
+    "description": "Multi-Mirror-Verwaltung f\u00fcr Modul-Repositories und Core-Updates (GitHub-Quellen, Verzeichnis-Explorer, Hintergrund-Sync und Cronjobs).",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest Team"
+    ],
+    "history": [
+        {
+            "version": "1.0.0",
+            "date": "2026-09-14",
+            "changes": [
+                "Stabile Version 1.0.0 von ModulNest Mirror Manager.",
+                "Automatisierte und manuelle Spiegelung von Modul-Repositories.",
+                "Intelligenter SHA-256 Pre-Check zur Einsparung von I/O und Netzwerk-Traffic.",
+                "Schutz vor parallelen Sync-Prozessen \u00fcber Concurrency-Locks.",
+                "Kollisionsfreie dynamische Cron-Zeitslots basierend auf der Mirror-ID.",
+                "Live-Status und Protokoll-Polling im Administrationsbereich."
+            ]
+        },
+        {
+            "version": "0.1.0-beta.1",
+            "date": "2026-09-13",
+            "changes": [
+                "Initial beta release."
+            ]
+        }
+    ],
+    "releases": [
+        {
+            "version": "1.0.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Stabile Version 1.0.0 von ModulNest Mirror Manager.",
+                "changes": [
+                    "Stabile Version 1.0.0 von ModulNest Mirror Manager.",
+                    "Automatisierte und manuelle Spiegelung von Modul-Repositories.",
+                    "Intelligenter SHA-256 Pre-Check zur Einsparung von I/O und Netzwerk-Traffic.",
+                    "Schutz vor parallelen Sync-Prozessen \u00fcber Concurrency-Locks.",
+                    "Kollisionsfreie dynamische Cron-Zeitslots basierend auf der Mirror-ID.",
+                    "Live-Status und Protokoll-Polling im Administrationsbereich."
+                ]
+            },
+            "core": ">=2.1.0 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 0,
+            "package": {
+                "location": "packages/modulnest.mirror/1.0.0/modulnest.mirror-1.0.0.zip",
+                "size": 23348,
+                "sha256": "8b9523e87c6f5bb053869c17cf333863a90eed18ab0646e5ff3bdd289e716e58"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "uxzLx+0H+ZdWJ1IpG771iuPvlBJa3elt0+ItKoN9ZwKrHbTCfXHG0TAr7wTMTgnwDL05Ya2xD41svz7eRIGzCg==",
+            "published_at": "2026-09-14T12:00:00+00:00"
+        }
+    ]
+}

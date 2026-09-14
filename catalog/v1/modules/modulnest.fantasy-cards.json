@@ -1,0 +1,97 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.fantasy-cards",
+    "name": "Fantasy Cards",
+    "description": "Digitales Fantasy-Sammelkarten-System f\u00fcr Sets, Karten und Booster.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest Team"
+    ],
+    "history": [
+        {
+            "version": "0.1.0-beta.1",
+            "date": "2026-09-14",
+            "changes": [
+                "Native v2 module structure for FantasyCards.",
+                "Card sets overview and card set detail views.",
+                "Booster claiming and opening system with interactive reveal animation.",
+                "User collection view with rarity indicators and set completion progress.",
+                "Admin management for sets, cards with inline editing, reordering, and mass upload (ZIP / image batch).",
+                "Isolated schema migrations and demo seeds for native database setup.",
+                "Package assets for frontend interactions (lightbox, booster animations, admin tools)."
+            ]
+        }
+    ],
+    "releases": [
+        {
+            "version": "0.1.0-beta.1",
+            "channel": "beta",
+            "release_notes": {
+                "summary": "Native v2 module structure for FantasyCards.",
+                "changes": [
+                    "Native v2 module structure for FantasyCards.",
+                    "Card sets overview and card set detail views.",
+                    "Booster claiming and opening system with interactive reveal animation.",
+                    "User collection view with rarity indicators and set completion progress.",
+                    "Admin management for sets, cards with inline editing, reordering, and mass upload (ZIP / image batch).",
+                    "Isolated schema migrations and demo seeds for native database setup.",
+                    "Package assets for frontend interactions (lightbox, booster animations, admin tools)."
+                ]
+            },
+            "core": ">=2.1.0 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 2,
+            "package": {
+                "location": "packages/modulnest.fantasy-cards/0.1.0-beta.1/modulnest.fantasy-cards-0.1.0-beta.1.zip",
+                "size": 54161,
+                "sha256": "88a76e5230d7e8104121a6332cffa1c467875fa66f1c47f08995ed959caa20d7"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "XoCcYdhHFIx/LOr/T6l14xU7oKK0fZghTCQTzWQg3cPqPK36RoeGEZ2yMmAzhYrMXIeL/dAg/GGpSN6Wlx0JBA==",
+            "published_at": "2026-09-14T12:00:00+00:00"
+        }
+    ],
+    "adoption": {
+        "legacy_version": "1.2.0",
+        "file_hashes": {
+            "app/Modules/FantasyCards/Database/schema.sql": "8465d8ea28b8719c7e8d115a3cec35697a20e6aed745abaffc575e4295665a13",
+            "app/Modules/FantasyCards/Database/seeds.sql": "32762442c0097edea330ac372f58032e819ef6c5e0c2594f0058ecb6dceb9f16",
+            "app/Modules/FantasyCards/FantasyCardsAdminNavigationProvider.php": "749aece63698785fafa512ab5bc0c10827bc457f463115f6c27cf6150cbfdfe6",
+            "app/Modules/FantasyCards/FantasyCardsBoosterConfig.php": "2e52ec0b47c8d99d9454cbae3d31ed9c59e73aaaa377d62c47dc8231ecaa5667",
+            "app/Modules/FantasyCards/FantasyCardsBoosterService.php": "9e30e2233c68bf34446fa7c43c4a2579dcd9299ba8ff39e6033ab17ec57e0fa6",
+            "app/Modules/FantasyCards/FantasyCardsController.php": "e359758065973d4d2dee729d44980175b20a51f967cf485c6e4c013d60415180",
+            "app/Modules/FantasyCards/FantasyCardsModule.php": "260c4a9de74d65182a72e54f997e00e0d5ac5f0e1367c47e6a0c075d7cff98b2",
+            "app/Modules/FantasyCards/FantasyCardsProfileService.php": "73cbd29cd43167ee02c26f013d5054b07d5d41affb2b478fde32202bc9c23790",
+            "app/Modules/FantasyCards/FantasyCardsRandom.php": "4c5af771f96f9b5d995e42ca6adae8e48b4e1f092ec80d6e1aa01ed0da18317c",
+            "app/Modules/FantasyCards/FantasyCardsRarity.php": "2b7d897063411f21266ded911e243ec17ff52fe48e92a25050efeed5570b0a0d",
+            "app/Modules/FantasyCards/FantasyCardsRepository.php": "e27fcf26dc808cfd2b5d07ca903fac10885eb2f4f816bc3e331baa1d3968ee7a",
+            "app/Modules/FantasyCards/FantasyCardsService.php": "364ec58e2024b6f7f88ab76dc787f57a2f3640ce06681fdfc60da8b7a7ca3d3a",
+            "app/Modules/FantasyCards/FantasyCardsSubnavigationProvider.php": "188fbb111374a41027bc788675f77090a6ff075743b15d43423f014be80833d4",
+            "app/Modules/FantasyCards/FantasyCardsUploadService.php": "a21644ea074eae7ee0bdd6b65ae2ef03f1a08a1a0df2ddf44ae4569dc720b7e2",
+            "app/Views/fantasy-cards/admin-card-form.php": "a5bdff4da6a5a002a827209928fb3764fec1b200522d22d86a993189a8a97176",
+            "app/Views/fantasy-cards/admin-cards.php": "03046b08065516585e1464277c2ecaf649a86b23261d7f788d50d623c8856992",
+            "app/Views/fantasy-cards/admin-nav.php": "e6745c3edf51daa3f756ef843e1e48ca67d84b3c70c776bb957b393f07a438e7",
+            "app/Views/fantasy-cards/admin-set-form.php": "f68e7a02fc2060fc943c47d0e52a1a379c7b9484ae5a00344b97ff506a1563ac",
+            "app/Views/fantasy-cards/admin-sets.php": "79525bcbbe33bb297690779c40b619c60dfc239520edda7df26039e5a9c5b723",
+            "app/Views/fantasy-cards/admin-upload.php": "9ec79a19dc8ea3a7da40050b5bea3b9eb8e2c02adadee2e267bb049651de6beb",
+            "app/Views/fantasy-cards/boosters.php": "42f9133e94a68311eb02f3818d20d38e073e5b8254effff79a22839073521255",
+            "app/Views/fantasy-cards/collection.php": "19b8e41d0b5693f88c7862abb5a6ee61b9aea09ea813bc7fc1ee96e0408686ed",
+            "app/Views/fantasy-cards/index.php": "fa5ff645fa6fd989488b951b1f371a2131e8ef4fa88875a0863a1665f9c92f24",
+            "app/Views/fantasy-cards/set.php": "d6925116811ea1d906f3954d3e493506e73909aaeed16ac0b27ae57ab6f48896"
+        },
+        "baseline_migrations": [
+            {
+                "key": "modulnest.fantasy-cards_001_schema",
+                "checksum": "b5deff6ee82a551ccca9cd5cba0e20607a94ecf2134dd50cd2aa2e2882e2184e"
+            },
+            {
+                "key": "modulnest.fantasy-cards_002_seeds",
+                "checksum": "87bfd87accbf9a97106bd37c42d6ddd2e872b68c5f5e5444848c40fd3adb54aa"
+            }
+        ]
+    }
+}

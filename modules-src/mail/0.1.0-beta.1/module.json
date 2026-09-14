@@ -1,0 +1,66 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.mail",
+    "name": "Mail",
+    "description": "Multi-Account-Webmail-Client f\u00fcr IMAP/SMTP mit sicherem serverseitigem Abruf und Versand.",
+    "version": "0.1.0-beta.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest Team"
+        }
+    ],
+    "homepage": "https://github.com/ChobitsChii/ModulNest",
+    "repository": "https://github.com/ChobitsChii/ModulNest",
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0",
+        "extensions": [
+            "pdo",
+            "mbstring",
+            "openssl"
+        ]
+    },
+    "entrypoint": {
+        "class": "ModulNest\\Mail\\MailModule",
+        "file": "src/MailModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\Mail\\": "src/"
+        }
+    },
+    "dependencies": [],
+    "optional_dependencies": [],
+    "conflicts": [],
+    "migrations": {
+        "path": "migrations"
+    },
+    "views": {
+        "path": "views"
+    },
+    "assets": {
+        "path": "assets"
+    },
+    "route_prefix": "mail",
+    "access_level": "user",
+    "data": {
+        "schema_version": 1,
+        "compatible_schema": "=1",
+        "ownership": {
+            "tables": [
+                "mail_accounts",
+                "mail_favorite_folders",
+                "mail_sender_whitelist",
+                "mail_sender_exclusions",
+                "mail_list_preferences",
+                "mail_message_index"
+            ],
+            "settings": [],
+            "storage": [],
+            "uploads": [],
+            "jobs": []
+        }
+    },
+    "channel": "beta"
+}

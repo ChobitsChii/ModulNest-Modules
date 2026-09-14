@@ -57,6 +57,33 @@
             ]
         }
     ],
+    "releases": [
+        {
+            "version": "1.3.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                    "Synchronisierte Inhalte in lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
+                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 1,
+            "package": {
+                "location": "packages/modulnest.wiki/1.3.0/modulnest.wiki-1.3.0.zip",
+                "size": 43504,
+                "sha256": "6c76ca1ca8e460c97dc28ba3fac9867a66fdf50e9a0676ce9506168f762fec5c"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "kA894WC4X+Htal7NjBputC0Kb8FSE/WCtXgM8ECz6IFRZrtwSqfg6cFjVraFcKoIAShgX4zlqOyWddip8YZFCg==",
+            "published_at": "2026-09-08T12:00:00+00:00"
+        }
+    ],
     "adoption": {
         "legacy_version": "1.2.0",
         "file_hashes": {
@@ -92,32 +119,5 @@
                 "checksum": "71e3d13dba103f59a037058c50e743e915b91239e74c0c5269251e4a8bd027cd"
             }
         ]
-    },
-    "releases": [
-        {
-            "version": "1.3.0",
-            "channel": "stable",
-            "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                    "Synchronisierte Inhalte in lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
-                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
-                ]
-            },
-            "core": ">=2.0.0-alpha.1 <3.0.0",
-            "php": ">=8.3.0",
-            "dependencies": {},
-            "migration_count": 1,
-            "package": {
-                "location": "packages/modulnest.wiki/1.3.0/modulnest.wiki-1.3.0.zip",
-                "size": 43504,
-                "sha256": "6c76ca1ca8e460c97dc28ba3fac9867a66fdf50e9a0676ce9506168f762fec5c"
-            },
-            "signing_key_id": "modulnest-release-2026-01",
-            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "kA894WC4X+Htal7NjBputC0Kb8FSE/WCtXgM8ECz6IFRZrtwSqfg6cFjVraFcKoIAShgX4zlqOyWddip8YZFCg==",
-            "published_at": "2026-09-08T12:00:00+00:00"
-        }
-    ]
+    }
 }

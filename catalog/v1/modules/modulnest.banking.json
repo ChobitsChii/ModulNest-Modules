@@ -41,6 +41,33 @@
             ]
         }
     ],
+    "releases": [
+        {
+            "version": "1.2.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit versionierter Tabellen-Ownership ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit versionierter Tabellen-Ownership ver\u00f6ffentlicht.",
+                    "DataPortability-Anbindung auf den neutralen Capability-Vertrag umgestellt.",
+                    "Bestehende Konten, Buchungen, Imports, Regeln und Migration-History k\u00f6nnen sicher adoptiert werden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 1,
+            "package": {
+                "location": "packages/modulnest.banking/1.2.0/modulnest.banking-1.2.0.zip",
+                "size": 66823,
+                "sha256": "0b67584c129954885f5d8dd8652e24288e8a9817e7efb1ce2e0c066d33feaec9"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "F8S3RzI718VOkdJ9/XNhFLps2P1FEoCvkmCbj2eaNlh5LOFjN07J71LagUqBBWo0lOAEKCIKizhQojQqP3iLCw==",
+            "published_at": "2026-09-08T12:00:00+00:00"
+        }
+    ],
     "adoption": {
         "legacy_version": "1.2.0",
         "file_hashes": {
@@ -77,32 +104,5 @@
                 "checksum": "bedb25b1bf79a6904857a3bf1b18fc50455b13cdab3325318866a93572c6581b"
             }
         ]
-    },
-    "releases": [
-        {
-            "version": "1.2.0",
-            "channel": "stable",
-            "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit versionierter Tabellen-Ownership ver\u00f6ffentlicht.",
-                "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit versionierter Tabellen-Ownership ver\u00f6ffentlicht.",
-                    "DataPortability-Anbindung auf den neutralen Capability-Vertrag umgestellt.",
-                    "Bestehende Konten, Buchungen, Imports, Regeln und Migration-History k\u00f6nnen sicher adoptiert werden."
-                ]
-            },
-            "core": ">=2.0.0-alpha.1 <3.0.0",
-            "php": ">=8.3.0",
-            "dependencies": {},
-            "migration_count": 1,
-            "package": {
-                "location": "packages/modulnest.banking/1.2.0/modulnest.banking-1.2.0.zip",
-                "size": 66823,
-                "sha256": "0b67584c129954885f5d8dd8652e24288e8a9817e7efb1ce2e0c066d33feaec9"
-            },
-            "signing_key_id": "modulnest-release-2026-01",
-            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "F8S3RzI718VOkdJ9/XNhFLps2P1FEoCvkmCbj2eaNlh5LOFjN07J71LagUqBBWo0lOAEKCIKizhQojQqP3iLCw==",
-            "published_at": "2026-09-08T12:00:00+00:00"
-        }
-    ]
+    }
 }

@@ -1,0 +1,7 @@
+.mirror-manager-admin .cursor-pointer {
+    cursor: pointer;
+}
+.mirror-manager-admin .status-badge {
+    font-size: 0.825rem;
+    padding: 0.35rem 0.65rem;
+}

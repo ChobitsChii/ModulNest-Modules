@@ -1,0 +1,61 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.mirror",
+    "name": "Mirror Manager",
+    "description": "Multi-Mirror-Verwaltung für Modul-Repositories und Core-Updates (GitHub-Quellen, Verzeichnis-Explorer, Hintergrund-Sync und Cronjobs).",
+    "version": "0.1.0-beta.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest Team"
+        }
+    ],
+    "homepage": "https://github.com/ChobitsChii/ModulNest",
+    "repository": "https://github.com/ChobitsChii/ModulNest",
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0",
+        "extensions": [
+            "pdo"
+        ]
+    },
+    "entrypoint": {
+        "class": "ModulNest\\Mirror\\MirrorModule",
+        "file": "src/MirrorModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\Mirror\\": "src/"
+        }
+    },
+    "dependencies": [],
+    "optional_dependencies": [],
+    "conflicts": [],
+    "migrations": {
+        "path": "migrations"
+    },
+    "views": {
+        "path": "views"
+    },
+    "assets": {
+        "path": "assets"
+    },
+    "capabilities": {
+        "data_portability": "ModulNest\\Mirror\\Portability\\MirrorDataPortabilityProvider"
+    },
+    "data": {
+        "schema_version": 1,
+        "compatible_schema": "=1",
+        "ownership": {
+            "tables": [
+                "mirror_configs"
+            ],
+            "settings": [],
+            "storage": [],
+            "uploads": [],
+            "jobs": []
+        }
+    },
+    "route_prefix": "mirror",
+    "access_level": "admin"
+}

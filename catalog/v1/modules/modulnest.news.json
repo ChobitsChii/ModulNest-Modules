@@ -33,6 +33,32 @@
             ]
         }
     ],
+    "releases": [
+        {
+            "version": "1.2.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "changes": [
+                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
+                ]
+            },
+            "core": ">=2.0.0-alpha.1 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 2,
+            "package": {
+                "location": "packages/modulnest.news/1.2.0/modulnest.news-1.2.0.zip",
+                "size": 22553,
+                "sha256": "b49c555dcb0bcadf19f1bbeb657f20cc18c936f7c70f56d6d3926f957766fd68"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "0+WMrx9kZvoluFUOWTh6lVcGHOwST5TIlWtr1pR6iQ4zrUxt+u69b8ImWSMrhuPUy82/zRNiG0kRt2oFHKfPBQ==",
+            "published_at": "2026-09-07T12:00:00+00:00"
+        }
+    ],
     "adoption": {
         "legacy_version": "1.2.0",
         "file_hashes": {
@@ -62,31 +88,5 @@
                 "checksum": "a30328a39ed895b9da4ab7fe42d3082934eadcc06e360acad9355fd90b4133bc"
             }
         ]
-    },
-    "releases": [
-        {
-            "version": "1.2.0",
-            "channel": "stable",
-            "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
-                ]
-            },
-            "core": ">=2.0.0-alpha.1 <3.0.0",
-            "php": ">=8.3.0",
-            "dependencies": {},
-            "migration_count": 2,
-            "package": {
-                "location": "packages/modulnest.news/1.2.0/modulnest.news-1.2.0.zip",
-                "size": 22553,
-                "sha256": "b49c555dcb0bcadf19f1bbeb657f20cc18c936f7c70f56d6d3926f957766fd68"
-            },
-            "signing_key_id": "modulnest-release-2026-01",
-            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "0+WMrx9kZvoluFUOWTh6lVcGHOwST5TIlWtr1pR6iQ4zrUxt+u69b8ImWSMrhuPUy82/zRNiG0kRt2oFHKfPBQ==",
-            "published_at": "2026-09-07T12:00:00+00:00"
-        }
-    ]
+    }
 }

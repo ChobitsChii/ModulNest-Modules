@@ -1,0 +1,96 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.repository-manager",
+    "name": "Repository Manager",
+    "description": "Verwaltet Modul-Katalogquellen und steuert den lokalen ModulNest-Repository-Spiegel.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest contributors"
+    ],
+    "history": [
+        {
+            "version": "1.0.0",
+            "date": "2026-09-14",
+            "changes": [
+                "Stabile Version 1.0.0 des ModulNest Repository Managers.",
+                "Einheitliche Badge-Z\u00e4hler f\u00fcr Katalog-Reiter (Updates, Entdecken, Installiert) integriert.",
+                "Vollst\u00e4ndige Verwaltung von Modul-Katalogquellen, Priorit\u00e4ten und Trust-Schl\u00fcsseln.",
+                "Integrierte Statusanzeige und Spiegelungssteuerung f\u00fcr Repository-Mirrors."
+            ]
+        },
+        {
+            "version": "0.1.0-beta.4",
+            "date": "2026-09-12",
+            "changes": [
+                "Versionsneutrale, bereinigte Modulbeschreibung in Manifest und Modulklasse (\"Verwaltet Modul-Katalogquellen und steuert den lokalen ModulNest-Repository-Spiegel.\").",
+                "Volle Konfigurationsfreiheit: Die offizielle Standard-Katalogquelle kann von Administratoren bei Bedarf deaktiviert, priorisiert oder in ihren Einstellungen angepasst werden.",
+                "Formularerweiterung: Aktivierungs-Status (\"Katalogquelle aktivieren\") kann nun direkt im Bearbeiten-Formular eingesehen und ge\u00e4ndert werden.",
+                "Pr\u00e4zisierung der Dokumentation zur Hintergrundsynchronisation: Klarstellung, dass `flock` der interne Sperrmechanismus gegen parallele L\u00e4ufe ist und Cron ausschlie\u00dflich die zeitliche Steuerung \u00fcbernimmt.",
+                "Verbesserte UI-Konsistenz bei Katalogquellen-Status-Badges und Berechtigungspr\u00fcfungen f\u00fcr die Ausf\u00fchrung von Sync-Skripten."
+            ]
+        },
+        {
+            "version": "0.1.0-beta.3",
+            "date": "2026-09-12",
+            "changes": [
+                "Repository-Mirror-Integration: Verwaltung und Synchronisation des lokalen ModulNest-Repository-Spiegels (`sync-repository.sh`).",
+                "Live-Mirror-Statusanzeige: Anzeige von aktiver Sequenz, Snapshot-Name, UTC-Timestamp, Source-Fingerprint und Hintergrundprozess-Status (`flock`).",
+                "Asynchrone Hintergrund-Synchronisation \u00fcber `BackgroundProcessRunner` mit AJAX-Unterst\u00fctzung und Live-Statuspolling im Frontend.",
+                "Transparente Cron-Konfigurationsanzeige zur Dokumentation der empfohlenen System-Crontab.",
+                "Dynamische Ermittlung der aktiven Modulversion direkt aus dem Manifest statt statischem Hinweistext."
+            ]
+        },
+        {
+            "version": "0.1.0-beta.2",
+            "date": "2026-09-12",
+            "changes": [
+                "Strukturierte Trust-Key-Verwaltung mit dynamischen Zeilen f\u00fcr Key-ID und Base64-Public-Key statt reiner Raw-JSON-Eingabe (inklusive abw\u00e4rtskompatiblem Fallback).",
+                "Root-Key-Auswahl \u00fcber intuitive Checkboxen pro Signaturschl\u00fcssel.",
+                "Anzeige der SHA-256 Trust-Key-Fingerprints in der \u00dcbersicht und der Bearbeitungsansicht zur Verifikation.",
+                "AJAX-Verbindungstest f\u00fcr vorhandene Katalogquellen mit Ladezustand und Inline-Fehlerr\u00fcckmeldung ohne Seitenreload.",
+                "Verbesserte Fehlermeldung bei Aufruf einer ung\u00fcltigen oder gel\u00f6schten `?edit=` ID.",
+                "Korrekte Sichtbarkeitsbehandlung f\u00fcr Admin-only-Module ohne unerw\u00fcnschte Einblendung in der \u00f6ffentlichen Header-Navigation."
+            ]
+        },
+        {
+            "version": "0.1.0-beta.1",
+            "date": "2026-09-10",
+            "changes": [
+                "Erste Beta zur Verwaltung von Modul-Katalogquellen \u00fcber die \u00f6ffentliche Core-API (`ModuleContext::catalogSources()`).",
+                "Quellen auflisten, hinzuf\u00fcgen, bearbeiten, aktivieren/deaktivieren und priorisieren.",
+                "Offizielle Quellen sind klar gekennzeichnet und werden nicht versehentlich \u00fcberschrieben.",
+                "Keine eigene Trust-, Resolver- oder SQL-Logik; Validierung und Trust bleiben Core-Verantwortung."
+            ]
+        }
+    ],
+    "releases": [
+        {
+            "version": "1.0.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Stabile Version 1.0.0 des ModulNest Repository Managers.",
+                "changes": [
+                    "Stabile Version 1.0.0 des ModulNest Repository Managers.",
+                    "Einheitliche Badge-Z\u00e4hler f\u00fcr Katalog-Reiter (Updates, Entdecken, Installiert) integriert.",
+                    "Vollst\u00e4ndige Verwaltung von Modul-Katalogquellen, Priorit\u00e4ten und Trust-Schl\u00fcsseln.",
+                    "Integrierte Statusanzeige und Spiegelungssteuerung f\u00fcr Repository-Mirrors."
+                ]
+            },
+            "core": ">=2.1.0 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 0,
+            "package": {
+                "location": "packages/modulnest.repository-manager/1.0.0/modulnest.repository-manager-1.0.0.zip",
+                "size": 18197,
+                "sha256": "964a2a4089562bb3eec4ed47a3db2a48d8f3175529c5832e1a5ae6a0e427e3b6"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "NTIrbvA2qUUJPu91myry4wvTXyvCypx7i3QjtXXiwQQDnYRO+l7akd4IeH2NLA5H91i1FgvHQPxQh6E0R+vHDw==",
+            "published_at": "2026-09-14T12:00:00+00:00"
+        }
+    ]
+}

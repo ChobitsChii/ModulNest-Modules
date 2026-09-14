@@ -1,0 +1,122 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.calendar",
+    "name": "Kalender",
+    "description": "Lokaler Kalender mit Terminverwaltung (Tages-, Wochen- und Monatsansicht, CRUD f\u00fcr Termine).",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest Team"
+    ],
+    "history": [
+        {
+            "version": "1.0.0",
+            "date": "2026-09-14",
+            "changes": [
+                "Stabile Version 1.0.0 von ModulNest Calendar.",
+                "Verwaltung mehrerer pers\u00f6nlicher Kalender mit Farb- und Namensanpassung.",
+                "Monatsansicht mit interaktivem Raster und Terminanzeige.",
+                "Tages- und Wochenansicht mit Drag & Drop, Terminvergr\u00f6\u00dferung und Schnellbearbeitung.",
+                "Vollst\u00e4ndige Datenportabilit\u00e4t (Export/Import) und responsives Design."
+            ]
+        },
+        {
+            "version": "0.1.0-beta.1",
+            "date": "2026-09-10",
+            "changes": [
+                "Local calendar module with appointment management",
+                "Day view with hourly time grid (0-23h)",
+                "Week view with 7-day columns and hourly time grid",
+                "All-day events section in both views",
+                "CRUD operations for appointments:",
+                "Create appointments with title, description, location, start/end time, all-day flag, color",
+                "Read appointments in day/week views and via JSON API",
+                "Update appointments (full edit form)",
+                "Delete appointments with confirmation",
+                "Drag & drop to move appointments (day/week view)",
+                "Resize appointments by dragging bottom edge (day/week view)",
+                "Double-click on empty time slot to create new appointment",
+                "Keyboard navigation and accessibility (ARIA labels, focus management)",
+                "Color picker for appointment categories",
+                "Responsive design (mobile-friendly)",
+                "Dark mode support via CSS variables",
+                "Data Portability support (export/import appointments)",
+                "Module subnavigation (Day/Week tabs)",
+                "Database migration with indexes for performance",
+                "Input validation (server-side + client-side)",
+                "CSRF protection on all state-changing operations",
+                "Flash messages for user feedback",
+                "`calendar_appointments` table with columns:",
+                "`id` (BIGINT UNSIGNED, PK)",
+                "`user_id` (BIGINT UNSIGNED, FK to users)",
+                "`title` (VARCHAR 255, required)",
+                "`description` (TEXT, optional)",
+                "`location` (VARCHAR 500, optional)",
+                "`start_at` (DATETIME, required)",
+                "`end_at` (DATETIME, required)",
+                "`all_day` (TINYINT, default 0)",
+                "`color` (VARCHAR 7, default #3B82F6)",
+                "`created_at` / `updated_at` (DATETIME, auto)",
+                "`idx_calendar_appointments_user_start` (user_id, start_at)",
+                "`idx_calendar_appointments_user_end` (user_id, end_at)",
+                "`idx_calendar_appointments_all_day` (user_id, all_day, start_at)",
+                "PSR-4 autoloading under `ModulNest\\Module\\Calendar\\`",
+                "Domain layer: DTO, Repository, Service, Validator",
+                "Entrypoint implements `NativeModuleInterface`",
+                "Router with positional access/CSRF parameters (`user`, `strict`)",
+                "ModuleSubnavigationProviderInterface implementation",
+                "DataPortabilityProviderInterface implementation (full 11-method interface)",
+                "Native binding for DataPortability provider",
+                "Views rendered via `@modulnest.calendar/` namespace",
+                "Assets published to `/assets/modules/modulnest.calendar/0.1.0-beta.1/`",
+                "Google Calendar synchronization (OAuth 2.0, bidirectional sync)",
+                "Recurring appointments (RRULE support)",
+                "CalDAV support",
+                "Shared calendars / multi-user calendars",
+                "Appointment reminders/notifications",
+                "Timezone handling beyond server timezone",
+                "File attachments to appointments",
+                "Appointment categories/tags beyond color",
+                "All database queries use prepared statements (PDO)",
+                "User-scoped data access (user_id enforced on all queries)",
+                "CSRF tokens required for POST/PATCH/DELETE",
+                "Access level `user` (authenticated users only)",
+                "Input validation and sanitization",
+                "XSS prevention via `htmlspecialchars` in views",
+                "PHP lint check passes",
+                "Module structure follows ModulNest v2 conventions",
+                "Compatible with module-v2 test suite"
+            ]
+        }
+    ],
+    "releases": [
+        {
+            "version": "1.0.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Stabile Version 1.0.0 von ModulNest Calendar.",
+                "changes": [
+                    "Stabile Version 1.0.0 von ModulNest Calendar.",
+                    "Verwaltung mehrerer pers\u00f6nlicher Kalender mit Farb- und Namensanpassung.",
+                    "Monatsansicht mit interaktivem Raster und Terminanzeige.",
+                    "Tages- und Wochenansicht mit Drag & Drop, Terminvergr\u00f6\u00dferung und Schnellbearbeitung.",
+                    "Vollst\u00e4ndige Datenportabilit\u00e4t (Export/Import) und responsives Design."
+                ]
+            },
+            "core": ">=2.1.0 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 1,
+            "package": {
+                "location": "packages/modulnest.calendar/1.0.0/modulnest.calendar-1.0.0.zip",
+                "size": 33264,
+                "sha256": "4dc51cda54cb19bde072abf44ca15531acb6a99c4291322137d49a333cd0c060"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "LPo9XXIXi/pAouqptkPiZa7T0riHQIIhFwcuqdsHy9mUEG4ST9leDuFAX0aeKHr8Wc1+AqpR6Bjquqh074gRAA==",
+            "published_at": "2026-09-14T12:00:00+00:00"
+        }
+    ]
+}

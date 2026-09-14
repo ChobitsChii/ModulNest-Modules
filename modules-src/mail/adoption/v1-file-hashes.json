@@ -1,0 +1,15 @@
+{
+    "app/Modules/Mail/Database/schema.sql": "39ed6ac0d2270bc7674ef16d1457e624ebcefac7ecbc374fd121a45f02f7e105",
+    "app/Modules/Mail/MailController.php": "bb9ccd299c83b1861706759b40a16a3f0a602a09880c025d2a6685b56a1875fc",
+    "app/Modules/Mail/MailModule.php": "3477f594f9273e7b0d08fde12f69a23de787bee037d1f285f414db9f59868d48",
+    "app/Modules/Mail/MailRepository.php": "aee06a68705c3b38c1bb22d5dcbe726efd4ab1c7110bc192493e2d2ba1c374e7",
+    "app/Modules/Mail/MailTransportBackendInterface.php": "22021ccf02f42a6020c77c51a35d4eb6fb46b489d20832034c78e27b07e99235",
+    "app/Modules/Mail/WebklexSymfonyMailBackend.php": "41fc5997afb73a34210d9e519e676ba39208dacc69d2521f6194d0eace1a4813",
+    "app/Views/mail/account-form.php": "d6296c00ba3ab04d85f0dfb4f09b5aa363ba0001e7d07021f5c120186637639d",
+    "app/Views/mail/compose.php": "3d60de63ea7903aecfb61b4f06582d6c283c22de60737ec4e82c8e6d6f277724",
+    "app/Views/mail/index.php": "ea2fa70844d8c81b1d295bcf1d72172f1791dbbb45548d2c29b5323e18423476",
+    "app/Views/mail/message.php": "6ba0492112f09e4fa82bea48f17a719b18abaa3b62ae2ab66ea782ca8f9137b1",
+    "app/Views/mail/partials/message-detail.php": "2192fcbca25f6e8361a04813d126f233b68df7791baf332bf9201a70054c3857",
+    "app/Views/mail/partials/nav.php": "821ca562dbfc8f1bb324b108f7e5bf879111207321c02189770c78efbf51999c",
+    "public/assets/js/mail-frame-autosize.js": "258e1b1c448018c420879be75be8a47a2edd30749ab9730bc3ef7a1429f09e92"
+}
