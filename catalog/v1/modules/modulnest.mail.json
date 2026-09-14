@@ -11,7 +11,7 @@
     ],
     "history": [
         {
-            "version": "0.1.0-beta.1",
+            "version": "1.0.1-beta.2",
             "date": "2026-09-14",
             "changes": [
                 "Native v2 module structure for Mail.",
@@ -26,7 +26,7 @@
     ],
     "releases": [
         {
-            "version": "0.1.0-beta.1",
+            "version": "1.0.1-beta.2",
             "channel": "beta",
             "release_notes": {
                 "summary": "Native v2 module structure for Mail.",
@@ -45,13 +45,13 @@
             "dependencies": {},
             "migration_count": 1,
             "package": {
-                "location": "packages/modulnest.mail/0.1.0-beta.1/modulnest.mail-0.1.0-beta.1.zip",
-                "size": 44101,
-                "sha256": "0425769b0ddba0188edf4ee8eba079911cfedce5150007d3a4e8515dee82510d"
+                "location": "packages/modulnest.mail/1.0.1-beta.2/modulnest.mail-1.0.1-beta.2.zip",
+                "size": 44102,
+                "sha256": "b4e17e2bcb2ded73ee42f7a81c63b18cf37bfa344e518fabd49e9abe1f81059f"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "j+rtjP1V72zQ7+qq6fJm+ZdXwExSk5D4rMRXbNeXBrdGXY38kHXUwdJc+F4P8UX8Zf5ZSBNxVnYrQFjvzAc3Dg==",
+            "signature": "7tr7OgS/14U61qgWahG8R2lxU89XGl3lFvuAH6jUKuuGR6Fksf3Z2XVh2GytYk1ZBdtQ0TkEVzFRTY7pA4pCBA==",
             "published_at": "2026-09-14T12:00:00+00:00"
         }
     ],

@@ -1,0 +1,50 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.repository-manager",
+    "name": "Repository Manager",
+    "description": "(Obsolet) Katalogquellen sind nun nativ im Modul-Katalog integriert. Dieses Modul kann gefahrlos deinstalliert werden.",
+    "version": "1.0.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest contributors"
+        }
+    ],
+    "homepage": "https://github.com/ChobitsChii/ModulNest",
+    "repository": "https://github.com/ChobitsChii/ModulNest",
+    "route_prefix": "repository-manager",
+    "access_level": "admin",
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0",
+        "extensions": []
+    },
+    "entrypoint": {
+        "class": "ModulNest\\RepositoryManager\\RepositoryManagerModule",
+        "file": "src/RepositoryManagerModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\RepositoryManager\\": "src/"
+        }
+    },
+    "dependencies": [],
+    "optional_dependencies": [],
+    "conflicts": [],
+    "views": {
+        "path": "views"
+    },
+    "capabilities": [],
+    "data": {
+        "schema_version": 0,
+        "compatible_schema": "=0",
+        "ownership": {
+            "tables": [],
+            "settings": [],
+            "storage": [],
+            "uploads": [],
+            "jobs": []
+        }
+    },
+    "channel": "stable"
+}

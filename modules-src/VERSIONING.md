@@ -1,5 +1,12 @@
 # Historische Modulversionen
 
+Für neue Modulreleases gelten die allgemeinen SemVer-Regeln der kanonischen
+[Authoring-Anleitung](../docs/development/module-v2-authoring.md#4-versionierung-und-changelog).
+Die nachfolgende Sonderzuordnung rekonstruiert ausschließlich die vor dem ersten
+öffentlichen Modul-v2-Release gemeinsam mit dem Core veröffentlichte Historie; sie
+ist keine Regel, nach der neue Module wegen ihrer Paketierung automatisch eine
+Minor-Version erhalten.
+
 Die Produktmodule wurden vor ModulNest 2 gemeinsam mit dem Core veröffentlicht. Für den unabhängigen Katalog wird ihre tatsächlich belegte Historie rückwirkend als eigene SemVer-Reihe geführt.
 
 ## Regeln

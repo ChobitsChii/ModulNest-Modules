@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "id": "modulnest.mail",
-    "name": "Mail",
-    "description": "Multi-Account-Webmail-Client f\u00fcr IMAP/SMTP mit sicherem serverseitigem Abruf und Versand.",
-    "version": "0.1.0-beta.1",
+    "id": "modulnest.fantasy-cards",
+    "name": "Fantasy Cards",
+    "description": "Digitales Fantasy-Sammelkarten-System für Sets, Karten und Booster.",
+    "version": "1.0.1-beta.2",
     "license": "MIT",
     "authors": [
         {
@@ -18,16 +18,16 @@
         "extensions": [
             "pdo",
             "mbstring",
-            "openssl"
+            "gd"
         ]
     },
     "entrypoint": {
-        "class": "ModulNest\\Mail\\MailModule",
-        "file": "src/MailModule.php"
+        "class": "ModulNest\\FantasyCards\\FantasyCardsModule",
+        "file": "src/FantasyCardsModule.php"
     },
     "autoload": {
         "psr4": {
-            "ModulNest\\Mail\\": "src/"
+            "ModulNest\\FantasyCards\\": "src/"
         }
     },
     "dependencies": [],
@@ -42,23 +42,31 @@
     "assets": {
         "path": "assets"
     },
-    "route_prefix": "mail",
+    "route_prefix": "fantasy-cards",
     "access_level": "user",
     "data": {
         "schema_version": 1,
         "compatible_schema": "=1",
         "ownership": {
             "tables": [
-                "mail_accounts",
-                "mail_favorite_folders",
-                "mail_sender_whitelist",
-                "mail_sender_exclusions",
-                "mail_list_preferences",
-                "mail_message_index"
+                "card_sets",
+                "cards",
+                "booster_types",
+                "user_booster_inventory",
+                "user_cards",
+                "fantasy_card_user_state",
+                "fantasy_card_booster_openings",
+                "fantasy_card_booster_opening_cards",
+                "fantasy_card_profile_settings",
+                "fantasy_card_profile_showcase_cards"
             ],
             "settings": [],
-            "storage": [],
-            "uploads": [],
+            "storage": [
+                "storage/fantasy-cards"
+            ],
+            "uploads": [
+                "public/assets/fantasy-cards"
+            ],
             "jobs": []
         }
     },

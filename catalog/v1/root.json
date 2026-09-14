@@ -1,9 +1,9 @@
 {
     "schema_version": 1,
     "catalog_id": "modulnest.official",
-    "sequence": 4,
-    "generated_at": "2026-09-14T05:17:33+00:00",
-    "expires_at": "2027-09-14T05:17:32+00:00",
+    "sequence": 5,
+    "generated_at": "2026-09-14T06:06:09+00:00",
+    "expires_at": "2027-09-14T23:59:59+00:00",
     "signing_keys": [
         {
             "key_id": "modulnest-root-2026-01",
@@ -40,7 +40,7 @@
         {
             "id": "modulnest.fantasy-cards",
             "path": "catalog/v1/modules/modulnest.fantasy-cards.json",
-            "sha256": "444432a2b68ff1e0dc0584aed0d5c9482886a21c586c0a230c7de59ca1493cbd"
+            "sha256": "6702a833f13bc19aecd5893c9e5893a0ca323f27bc0671f8bc8295e7639e5405"
         },
         {
             "id": "modulnest.homepage",
@@ -55,7 +55,7 @@
         {
             "id": "modulnest.mail",
             "path": "catalog/v1/modules/modulnest.mail.json",
-            "sha256": "b840f1bc240841ee408775650ac0b558ddf839180bfb6d5dcfb46517c1ac0e6b"
+            "sha256": "78b0f5343988fb89e53ed2c5bd4022b07cda20aa2a50bb863cc9b5dedf53fcdb"
         },
         {
             "id": "modulnest.mirror",
@@ -75,7 +75,7 @@
         {
             "id": "modulnest.repository-manager",
             "path": "catalog/v1/modules/modulnest.repository-manager.json",
-            "sha256": "a16c98bd416528ab93cb9ddc3f4d6098e2f827ee23db1c5fb20677e07d8436fe"
+            "sha256": "9e6d5c24ddbaf035c50c2c8fc23f72d2f35e4a9b2311ca585516ab43f6bb1300"
         },
         {
             "id": "modulnest.sneak-preview",

@@ -11,7 +11,7 @@
     ],
     "history": [
         {
-            "version": "0.1.0-beta.1",
+            "version": "1.0.1-beta.2",
             "date": "2026-09-14",
             "changes": [
                 "Native v2 module structure for FantasyCards.",
@@ -26,7 +26,7 @@
     ],
     "releases": [
         {
-            "version": "0.1.0-beta.1",
+            "version": "1.0.1-beta.2",
             "channel": "beta",
             "release_notes": {
                 "summary": "Native v2 module structure for FantasyCards.",
@@ -45,13 +45,13 @@
             "dependencies": {},
             "migration_count": 2,
             "package": {
-                "location": "packages/modulnest.fantasy-cards/0.1.0-beta.1/modulnest.fantasy-cards-0.1.0-beta.1.zip",
-                "size": 54161,
-                "sha256": "88a76e5230d7e8104121a6332cffa1c467875fa66f1c47f08995ed959caa20d7"
+                "location": "packages/modulnest.fantasy-cards/1.0.1-beta.2/modulnest.fantasy-cards-1.0.1-beta.2.zip",
+                "size": 54162,
+                "sha256": "94654f777d064b8c33d04b8a6432aeef8f733aed40ba56e621dbb4a7fc2b52b9"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "XoCcYdhHFIx/LOr/T6l14xU7oKK0fZghTCQTzWQg3cPqPK36RoeGEZ2yMmAzhYrMXIeL/dAg/GGpSN6Wlx0JBA==",
+            "signature": "afRPW2HyspTs7YnBUiDHiRriBx3rpX6uCUy4iMuktuMiiSyQgAWCiD6e3ol61wR2D3SL0WjNFeo1IJ60CI+6AQ==",
             "published_at": "2026-09-14T12:00:00+00:00"
         }
     ],

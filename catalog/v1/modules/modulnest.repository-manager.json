@@ -2,7 +2,7 @@
     "schema_version": 2,
     "id": "modulnest.repository-manager",
     "name": "Repository Manager",
-    "description": "Verwaltet Modul-Katalogquellen und steuert den lokalen ModulNest-Repository-Spiegel.",
+    "description": "(Obsolet) Katalogquellen sind nun nativ im Modul-Katalog integriert. Dieses Modul kann gefahrlos deinstalliert werden.",
     "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
     "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
     "license": "MIT",
@@ -10,6 +10,13 @@
         "ModulNest contributors"
     ],
     "history": [
+        {
+            "version": "1.0.1",
+            "date": "2026-09-14",
+            "changes": [
+                "Das Modul wurde als veraltet (obsolet) markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager."
+            ]
+        },
         {
             "version": "1.0.0",
             "date": "2026-09-14",
@@ -67,15 +74,12 @@
     ],
     "releases": [
         {
-            "version": "1.0.0",
+            "version": "1.0.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Stabile Version 1.0.0 des ModulNest Repository Managers.",
+                "summary": "Das Modul wurde als veraltet (obsolet) markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager.",
                 "changes": [
-                    "Stabile Version 1.0.0 des ModulNest Repository Managers.",
-                    "Einheitliche Badge-Z\u00e4hler f\u00fcr Katalog-Reiter (Updates, Entdecken, Installiert) integriert.",
-                    "Vollst\u00e4ndige Verwaltung von Modul-Katalogquellen, Priorit\u00e4ten und Trust-Schl\u00fcsseln.",
-                    "Integrierte Statusanzeige und Spiegelungssteuerung f\u00fcr Repository-Mirrors."
+                    "Das Modul wurde als veraltet (obsolet) markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager."
                 ]
             },
             "core": ">=2.1.0 <3.0.0",
@@ -83,13 +87,13 @@
             "dependencies": {},
             "migration_count": 0,
             "package": {
-                "location": "packages/modulnest.repository-manager/1.0.0/modulnest.repository-manager-1.0.0.zip",
-                "size": 18197,
-                "sha256": "964a2a4089562bb3eec4ed47a3db2a48d8f3175529c5832e1a5ae6a0e427e3b6"
+                "location": "packages/modulnest.repository-manager/1.0.1/modulnest.repository-manager-1.0.1.zip",
+                "size": 13200,
+                "sha256": "2068b5aa069118216c643d8412711116ab6717a376a2454d3c50c961ae63bef8"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "NTIrbvA2qUUJPu91myry4wvTXyvCypx7i3QjtXXiwQQDnYRO+l7akd4IeH2NLA5H91i1FgvHQPxQh6E0R+vHDw==",
+            "signature": "WuxDJv/58F9JHY/LDYpsOy8zADWzKy96E+7rAKAR74snIvu8hiLIB3RSykmSfSZPos2l03CAo0Nh7MHhMVBHDA==",
             "published_at": "2026-09-14T12:00:00+00:00"
         }
     ]
