@@ -2,7 +2,7 @@
     "schema_version": 2,
     "id": "modulnest.repository-manager",
     "name": "Repository Manager",
-    "description": "(Obsolet) Katalogquellen sind nun nativ im Modul-Katalog integriert. Dieses Modul kann gefahrlos deinstalliert werden.",
+    "description": "(Veraltet) Katalogquellen sind nun nativ im Modul-Katalog integriert. Dieses Modul kann gefahrlos deinstalliert werden.",
     "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
     "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
     "license": "MIT",
@@ -10,6 +10,13 @@
         "ModulNest contributors"
     ],
     "history": [
+        {
+            "version": "1.0.2",
+            "date": "2026-09-14",
+            "changes": [
+                "Das Modul wurde als veraltet markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager."
+            ]
+        },
         {
             "version": "1.0.1",
             "date": "2026-09-14",
@@ -74,12 +81,12 @@
     ],
     "releases": [
         {
-            "version": "1.0.1",
+            "version": "1.0.2",
             "channel": "stable",
             "release_notes": {
-                "summary": "Das Modul wurde als veraltet (obsolet) markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager.",
+                "summary": "Das Modul wurde als veraltet markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager.",
                 "changes": [
-                    "Das Modul wurde als veraltet (obsolet) markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager."
+                    "Das Modul wurde als veraltet markiert. S\u00e4mtliche Katalogquellen-Funktionen sind nun nativ im Modul-Katalog integriert; die Spiegelungs- und Cronjob-Verwaltung l\u00e4uft \u00fcber das Modul Mirror Manager."
                 ]
             },
             "core": ">=2.1.0 <3.0.0",
@@ -87,14 +94,16 @@
             "dependencies": {},
             "migration_count": 0,
             "package": {
-                "location": "packages/modulnest.repository-manager/1.0.1/modulnest.repository-manager-1.0.1.zip",
-                "size": 13200,
-                "sha256": "2068b5aa069118216c643d8412711116ab6717a376a2454d3c50c961ae63bef8"
+                "location": "packages/modulnest.repository-manager/1.0.2/modulnest.repository-manager-1.0.2.zip",
+                "size": 13153,
+                "sha256": "e75bbfbf7e19a7e3a98af357450a20cb51bd0a8d3612060dedad43d56f20da8c"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "WuxDJv/58F9JHY/LDYpsOy8zADWzKy96E+7rAKAR74snIvu8hiLIB3RSykmSfSZPos2l03CAo0Nh7MHhMVBHDA==",
+            "signature": "7zL0oED31xuVMlJFLv0fEag/i/iY1oZs0rGnDP1Of7UIrGKkHYS3COE6XmNjf2/IKAq3kYcfy4g5E7vTF4+LAg==",
             "published_at": "2026-09-14T12:00:00+00:00"
         }
-    ]
+    ],
+    "deprecated": true,
+    "deprecation_reason": "Katalogquellen sind nun direkt im Modul-Katalog integriert. Dieses Modul wird nicht mehr ben\u00f6tigt und kann gefahrlos deinstalliert werden."
 }

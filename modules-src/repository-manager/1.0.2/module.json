@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.repository-manager",
+    "name": "Repository Manager",
+    "description": "(Veraltet) Katalogquellen sind nun nativ im Modul-Katalog integriert. Dieses Modul kann gefahrlos deinstalliert werden.",
+    "deprecated": true,
+    "deprecation_reason": "Katalogquellen sind nun direkt im Modul-Katalog integriert. Dieses Modul wird nicht mehr benötigt und kann gefahrlos deinstalliert werden.",
+    "version": "1.0.2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest contributors"
+        }
+    ],
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0"
+    },
+    "entrypoint": {
+        "class": "ModulNest\\RepositoryManager\\RepositoryManagerModule",
+        "file": "src/RepositoryManagerModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\RepositoryManager\\": "src/"
+        }
+    },
+    "route_prefix": "repository-manager",
+    "access_level": "admin",
+    "data": {
+        "schema_version": 0,
+        "ownership": {
+            "tables": [],
+            "settings": [],
+            "storage": [],
+            "uploads": [],
+            "jobs": []
+        }
+    },
+    "views": {
+        "path": "views"
+    }
+}

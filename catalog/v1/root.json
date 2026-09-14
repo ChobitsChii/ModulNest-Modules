@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "catalog_id": "modulnest.official",
-    "sequence": 5,
-    "generated_at": "2026-09-14T06:06:09+00:00",
+    "sequence": 6,
+    "generated_at": "2026-09-14T21:22:35+00:00",
     "expires_at": "2027-09-14T23:59:59+00:00",
     "signing_keys": [
         {
@@ -75,7 +75,7 @@
         {
             "id": "modulnest.repository-manager",
             "path": "catalog/v1/modules/modulnest.repository-manager.json",
-            "sha256": "9e6d5c24ddbaf035c50c2c8fc23f72d2f35e4a9b2311ca585516ab43f6bb1300"
+            "sha256": "2f68cfbbf122d9d51c49da38570c75e35be8da1796d8107c9ded68f158e68c39"
         },
         {
             "id": "modulnest.sneak-preview",
