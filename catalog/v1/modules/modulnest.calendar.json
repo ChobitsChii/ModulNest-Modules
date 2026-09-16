@@ -2,7 +2,7 @@
     "schema_version": 2,
     "id": "modulnest.calendar",
     "name": "Kalender",
-    "description": "Lokaler Kalender mit Terminverwaltung (Tages-, Wochen- und Monatsansicht, CRUD f\u00fcr Termine).",
+    "description": "Kalender mit Terminverwaltung (Tages-, Wochen- und Monatsansicht), Serien- und Wiederholungsterminen sowie bidirektionaler Google Calendar Synchronisation.",
     "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
     "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
     "license": "MIT",
@@ -10,6 +10,18 @@
         "ModulNest Team"
     ],
     "history": [
+        {
+            "version": "1.1.0",
+            "date": "2026-09-15",
+            "changes": [
+                "Bidirektionale Google Calendar Integration via OAuth 2.0.",
+                "Google Kalender im Thunderbird-Stil als eigenst\u00e4ndige Kalender mit Auswahl-Checkboxen.",
+                "Admin-Bereich unter /admin/calendar zur Konfiguration von Google Client-ID und Client-Secret mit Weiterleitungs-URI und Schritt-f\u00fcr-Schritt-Anleitung.",
+                "Unterst\u00fctzung von wiederkehrenden Terminen (t\u00e4glich, werktags, w\u00f6chentlich, monatlich, j\u00e4hrlich) nach Google Calendar Vorbild.",
+                "Intelligenter Hintergrund-Sync mit Rate-Limiting (Spam-Schutz) und relativer Zeitstatus-Anzeige.",
+                "Rolling-Window Optimierung und Vorabladen von Monaten f\u00fcr maximale Performance."
+            ]
+        },
         {
             "version": "1.0.0",
             "date": "2026-09-14",
@@ -92,31 +104,32 @@
     ],
     "releases": [
         {
-            "version": "1.0.0",
+            "version": "1.1.0",
             "channel": "stable",
             "release_notes": {
-                "summary": "Stabile Version 1.0.0 von ModulNest Calendar.",
+                "summary": "Bidirektionale Google Calendar Integration via OAuth 2.0.",
                 "changes": [
-                    "Stabile Version 1.0.0 von ModulNest Calendar.",
-                    "Verwaltung mehrerer pers\u00f6nlicher Kalender mit Farb- und Namensanpassung.",
-                    "Monatsansicht mit interaktivem Raster und Terminanzeige.",
-                    "Tages- und Wochenansicht mit Drag & Drop, Terminvergr\u00f6\u00dferung und Schnellbearbeitung.",
-                    "Vollst\u00e4ndige Datenportabilit\u00e4t (Export/Import) und responsives Design."
+                    "Bidirektionale Google Calendar Integration via OAuth 2.0.",
+                    "Google Kalender im Thunderbird-Stil als eigenst\u00e4ndige Kalender mit Auswahl-Checkboxen.",
+                    "Admin-Bereich unter /admin/calendar zur Konfiguration von Google Client-ID und Client-Secret mit Weiterleitungs-URI und Schritt-f\u00fcr-Schritt-Anleitung.",
+                    "Unterst\u00fctzung von wiederkehrenden Terminen (t\u00e4glich, werktags, w\u00f6chentlich, monatlich, j\u00e4hrlich) nach Google Calendar Vorbild.",
+                    "Intelligenter Hintergrund-Sync mit Rate-Limiting (Spam-Schutz) und relativer Zeitstatus-Anzeige.",
+                    "Rolling-Window Optimierung und Vorabladen von Monaten f\u00fcr maximale Performance."
                 ]
             },
             "core": ">=2.1.0 <3.0.0",
             "php": ">=8.3.0",
             "dependencies": {},
-            "migration_count": 1,
+            "migration_count": 2,
             "package": {
-                "location": "packages/modulnest.calendar/1.0.0/modulnest.calendar-1.0.0.zip",
-                "size": 33264,
-                "sha256": "4dc51cda54cb19bde072abf44ca15531acb6a99c4291322137d49a333cd0c060"
+                "location": "packages/modulnest.calendar/1.1.0/modulnest.calendar-1.1.0.zip",
+                "size": 55247,
+                "sha256": "a0b8b5dcd223413a2948991ce5821a58211227ca18aadfe2c942b2c22dbfd1c6"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "LPo9XXIXi/pAouqptkPiZa7T0riHQIIhFwcuqdsHy9mUEG4ST9leDuFAX0aeKHr8Wc1+AqpR6Bjquqh074gRAA==",
-            "published_at": "2026-09-14T12:00:00+00:00"
+            "signature": "L74dIo/ACq4wXTzeugLD45268ojSRkhKGS4tLUm68C0V8nO+OwQH4cw1lT/5lgDb64IhOgHZEi9zZTXHV5nqDA==",
+            "published_at": "2026-09-15T12:00:00+00:00"
         }
     ]
 }
