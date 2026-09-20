@@ -1,9 +1,9 @@
 {
     "schema_version": 1,
     "catalog_id": "modulnest.official",
-    "sequence": 9,
-    "generated_at": "2026-09-20T09:06:55+00:00",
-    "expires_at": "2030-01-01T00:00:00+00:00",
+    "sequence": 10,
+    "generated_at": "2026-09-20T17:28:05+00:00",
+    "expires_at": "2027-09-20T17:28:04+00:00",
     "signing_keys": [
         {
             "key_id": "modulnest-root-2026-01",
@@ -65,7 +65,7 @@
         {
             "id": "modulnest.mirror",
             "path": "catalog/v1/modules/modulnest.mirror.json",
-            "sha256": "84738b5ad286b20424d1bdcdc6fb54a1437a5cd251f42f156409ff17311b40b5"
+            "sha256": "d4268c4b980214df79d8d88d9ad46b859ea41fd70510d8467843b3a0acf0d3a4"
         },
         {
             "id": "modulnest.news",

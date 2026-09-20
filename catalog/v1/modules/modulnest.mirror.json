@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.0.2",
+            "date": "2026-09-20",
+            "changes": [
+                "Baseline-Migration (001_baseline.php) f\u00fcr mirror_configs erg\u00e4nzt, damit Tabellen beim Installieren und Aktualisieren zuverl\u00e4ssig angelegt werden."
+            ]
+        },
+        {
             "version": "1.0.1",
             "date": "2026-09-20",
             "changes": [
@@ -39,26 +46,26 @@
     ],
     "releases": [
         {
-            "version": "1.0.1",
+            "version": "1.0.2",
             "channel": "stable",
             "release_notes": {
-                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
+                "summary": "Baseline-Migration (001_baseline.php) f\u00fcr mirror_configs erg\u00e4nzt, damit Tabellen beim Installieren und Aktualisieren zuverl\u00e4ssig angelegt werden.",
                 "changes": [
-                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+                    "Baseline-Migration (001_baseline.php) f\u00fcr mirror_configs erg\u00e4nzt, damit Tabellen beim Installieren und Aktualisieren zuverl\u00e4ssig angelegt werden."
                 ]
             },
             "core": ">=2.2.0 <3.0.0",
             "php": ">=8.3.0",
             "dependencies": {},
-            "migration_count": 0,
+            "migration_count": 1,
             "package": {
-                "location": "packages/modulnest.mirror/1.0.1/modulnest.mirror-1.0.1.zip",
-                "size": 23480,
-                "sha256": "a48e2c2d7b28a37ead2155d75686c4683c05bf4caebf6d573b61469da7ae603e"
+                "location": "packages/modulnest.mirror/1.0.2/modulnest.mirror-1.0.2.zip",
+                "size": 23995,
+                "sha256": "bde95389b403196b2c420e613f14761d415fcd55a84f436f1e839e5321685e1d"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "/LEknypojYJHATYib6TpOOdCCBXTYnKGjDRDOWJImMZtmTyHxMk5x9Q7mgFEf/FeOq57oT1/IAZoU4mUb7U+Cg==",
+            "signature": "FhGfA67XbxHus3+5R9ataIY1QeJBuyyiMKiM11l9vCOc9YGy3sz+IFpyt4QqebK3EhOARK4oLFeDUWLIkak+Aw==",
             "published_at": "2026-09-20T12:00:00+00:00"
         }
     ]
