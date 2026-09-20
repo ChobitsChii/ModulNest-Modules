@@ -41,18 +41,18 @@
                     "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
-            "core": ">=2.1.0 <3.0.0",
+            "core": ">=2.2.0 <3.0.0",
             "php": ">=8.3.0",
             "dependencies": {},
             "migration_count": 2,
             "package": {
                 "location": "packages/modulnest.fantasy-cards/1.0.1-beta.3/modulnest.fantasy-cards-1.0.1-beta.3.zip",
-                "size": 54306,
-                "sha256": "a0f103e1f7500d2ab9aec5db48a541b7611a8cd4f6dc981e31717e838303b7e7"
+                "size": 54307,
+                "sha256": "15b6b5dbf1ca1344f6d23adc46dbd8f0d5724be78423c3949357c7e0fc053df9"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "WpWUBO0xn9fgQt9zHA9TRRjwalduPksCOBoGpI6Ph/a8pIffICYC1F0NTM0l+kQVXVuB0EQWTaEG+oH/IK7nBQ==",
+            "signature": "dKPsR1/y4+ltYPB1ioaOSCUy6r7EyF1IOwpWPsEgirqaUcGI4DbeOSXjB7YjOoLfIyRAfkrJbaYUCaFToTA+AQ==",
             "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],

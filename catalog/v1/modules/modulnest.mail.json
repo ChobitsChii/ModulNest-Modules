@@ -41,18 +41,18 @@
                     "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
-            "core": ">=2.1.0 <3.0.0",
+            "core": ">=2.2.0 <3.0.0",
             "php": ">=8.3.0",
             "dependencies": {},
             "migration_count": 1,
             "package": {
                 "location": "packages/modulnest.mail/1.0.1-beta.3/modulnest.mail-1.0.1-beta.3.zip",
-                "size": 44231,
-                "sha256": "d380637500e0ec511048c78b1a49a7afd3b4730f9c129ce2ff754695b302afa8"
+                "size": 44232,
+                "sha256": "b140783a2885ddc5c0e4d4ebd0f6077f364e5085f4bd1d43770cee20a0e55153"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "ixLRxSl30aZ/Txiq49GNlowwccONILYcdcRwd5vu6HgpxunYVoYF2HgSs/w5+hO0ECI1kYVkBz6TI3XBZ2C5BA==",
+            "signature": "6nW9CIpvKMZHmOHlWTEUWK88MaDgnBmCEGTZDDfvq6JtrEfJ6NmjidXIXSFaPwZsosbHvh6iNqlAy6okFDX0AA==",
             "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],

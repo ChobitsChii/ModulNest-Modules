@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
-    "catalog_id": "modulnest.production",
+    "catalog_id": "modulnest.official",
     "sequence": 9,
-    "generated_at": "2026-09-20T08:50:06+00:00",
+    "generated_at": "2026-09-20T09:06:55+00:00",
     "expires_at": "2030-01-01T00:00:00+00:00",
     "signing_keys": [
         {
@@ -20,42 +20,42 @@
         {
             "id": "modulnest.banking",
             "path": "catalog/v1/modules/modulnest.banking.json",
-            "sha256": "02457d026a6d28f0bf7693498943c0d56f089035be15ac6860c76570f137f423"
+            "sha256": "2b345541fb74d01641430141c4f524a9404500affbb10dbd3ccaa4603fe2f769"
         },
         {
             "id": "modulnest.calendar",
             "path": "catalog/v1/modules/modulnest.calendar.json",
-            "sha256": "ac7fc89f1532b4dccbde5e4ebefdebf0ca1831cf359571d986743e5105efbfc0"
+            "sha256": "94d0376709c90af8572a1d87c4799edeb96c1070296f8d59e6f4535ccfd4353a"
         },
         {
             "id": "modulnest.dashboard",
             "path": "catalog/v1/modules/modulnest.dashboard.json",
-            "sha256": "297c26cb7edac94a74fc4504405bfe84c7ceeff3d3980224945f3528c3626921"
+            "sha256": "20dda11009868898552b072c8228bf35fe4a1831b97ec25f2f542a43c7616279"
         },
         {
             "id": "modulnest.data-portability",
             "path": "catalog/v1/modules/modulnest.data-portability.json",
-            "sha256": "f8400d4b86a8cb276f010368d498cddbf6b526c4c92c1b9ecfa0c7c76ef761a7"
+            "sha256": "ab98fdfc64ca5813d0ef058ccad7c8979f56e70d98d48304ca5b9700d384cb45"
         },
         {
             "id": "modulnest.fantasy-cards",
             "path": "catalog/v1/modules/modulnest.fantasy-cards.json",
-            "sha256": "73d6002ba0dd2b9a906ed633e9e467763f83f4b66dbecc6ebb0169bc60f2aaf3"
+            "sha256": "3f9a796cb717014aa95a5f5ccf196e0c9a4710802a4a9be8b796c0d6ccd016d5"
         },
         {
             "id": "modulnest.homepage",
             "path": "catalog/v1/modules/modulnest.homepage.json",
-            "sha256": "4726b9f76b47cb3130301846ff30c7f12a2ebd0a6b14c0a4dfc2208e572d5443"
+            "sha256": "d3125837d130f8b0549afa6d0976156bb2e7af5cc154fa6c0c87153999425225"
         },
         {
             "id": "modulnest.logs",
             "path": "catalog/v1/modules/modulnest.logs.json",
-            "sha256": "9fcf6df4285056585dc65d3ac79f3b2d42293f18c6e3886031c1b9c868ad8447"
+            "sha256": "6ce789d708248532821ba6a9782931e514bbf5257535f9139c6af93367980af9"
         },
         {
             "id": "modulnest.mail",
             "path": "catalog/v1/modules/modulnest.mail.json",
-            "sha256": "f6a39927df23f7e01217fce9ba6c5b8c77b72487d3576b7f333e2b030ff531a6"
+            "sha256": "a5c075de5c1f8087c874b1c7699cdb215f82f65217c6f729dc704172efb37f1a"
         },
         {
             "id": "modulnest.mail-client",
@@ -65,17 +65,17 @@
         {
             "id": "modulnest.mirror",
             "path": "catalog/v1/modules/modulnest.mirror.json",
-            "sha256": "ea011e3de7ff589c923561e2a76865bca9d36f0d4d55f4374434c9069b01598f"
+            "sha256": "84738b5ad286b20424d1bdcdc6fb54a1437a5cd251f42f156409ff17311b40b5"
         },
         {
             "id": "modulnest.news",
             "path": "catalog/v1/modules/modulnest.news.json",
-            "sha256": "c69d9ef41ddc7028552ec9745dd4f3868f51a2aea3acdd50ebffbdccfb267150"
+            "sha256": "06325904f09c78526c62c4f89eaa91e4c178d5aec66e7661be3d72acd425f592"
         },
         {
             "id": "modulnest.pages",
             "path": "catalog/v1/modules/modulnest.pages.json",
-            "sha256": "fc90a681a598b27a5d1f52800d8e971b8d6ed9a654669cc748eb4fb992c7f01b"
+            "sha256": "167d0f73562dc0dd063406a3f505d047e05a4963d879965f6f1409f721733b96"
         },
         {
             "id": "modulnest.repository-manager",
@@ -85,22 +85,22 @@
         {
             "id": "modulnest.sneak-preview",
             "path": "catalog/v1/modules/modulnest.sneak-preview.json",
-            "sha256": "385d22360a740cff02c0e4d42597e7a264ec63860355ac2c90b42a63c0537678"
+            "sha256": "87f52b63bf50db910c35e56ba38b4ed340d717980a1770edca0cbce7ad3a11b3"
         },
         {
             "id": "modulnest.systeminfo",
             "path": "catalog/v1/modules/modulnest.systeminfo.json",
-            "sha256": "1c8d0f532c2aece606bd508bca6229cbc9b9f95a4afb337798ec39734ad3a672"
+            "sha256": "0e20053782761fca1c2e7883d6201eb1e6440b10e3c1e4cb522e91e81cb240f1"
         },
         {
             "id": "modulnest.tools",
             "path": "catalog/v1/modules/modulnest.tools.json",
-            "sha256": "dfd002d921b4ea9a0de59ea38f1c628ec8e87d8a470f1a0393f6f69fba982cb5"
+            "sha256": "446c0f35d7f92869751648d239efaf909256aed942905358328a708661eeb384"
         },
         {
             "id": "modulnest.wiki",
             "path": "catalog/v1/modules/modulnest.wiki.json",
-            "sha256": "7fb9d513b9ead6cc9c2363e0f53ae9a26a8873b2beb96c6d4992c222931afe93"
+            "sha256": "273e5a4b7a27e455965c3fbecda39e358fed4f056ee96f3d253cdd7c530905b1"
         }
     ]
 }

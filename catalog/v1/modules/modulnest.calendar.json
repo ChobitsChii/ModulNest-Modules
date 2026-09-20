@@ -123,18 +123,18 @@
                     "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert."
                 ]
             },
-            "core": ">=2.1.0 <3.0.0",
+            "core": ">=2.2.0 <3.0.0",
             "php": ">=8.3.0",
             "dependencies": {},
             "migration_count": 2,
             "package": {
                 "location": "packages/modulnest.calendar/1.1.1/modulnest.calendar-1.1.1.zip",
-                "size": 56365,
-                "sha256": "3c2184a4176ebd6046d8b76493d520c13f1b43db2945807b38131a68017c9a53"
+                "size": 56366,
+                "sha256": "64757f9284ff23cc5793e64ad15bc4d441c163f562b3740b4a904f2f14c07b42"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "4Z/EXIuUInO6iECp97eq76aZumT3H+KT3EnEP6RX0OxH2ei74xYbMhZxLPwV3w+eh+TXBeKEtPGWkRsYuVDHCw==",
+            "signature": "7F05OvdncwvVqOYcqfxehEk+s7wIlcxsEHaM4KNanr3sIFCQLIuMja53NNnClMh8xIt40hcWXkJDsz4zpNO+Dg==",
             "published_at": "2026-09-20T12:00:00+00:00"
         }
     ]
