@@ -1,0 +1,71 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.mail-client",
+    "name": "Mail-Client",
+    "description": "Thunderbird-artiger Webmail-Client mit Multi-Account-IMAP, progressivem Hintergrund-Sync, Autoconfig/Autodiscover, 3-Pane-Layout und SMTP-Versand.",
+    "version": "1.1.3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest Team"
+        }
+    ],
+    "homepage": "https://github.com/ChobitsChii/ModulNest",
+    "repository": "https://github.com/ChobitsChii/ModulNest",
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0",
+        "extensions": [
+            "pdo",
+            "mbstring",
+            "iconv",
+            "openssl",
+            "simplexml"
+        ]
+    },
+    "entrypoint": {
+        "class": "ModulNest\\MailClient\\MailClientModule",
+        "file": "src/MailClientModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\MailClient\\": "src/"
+        }
+    },
+    "dependencies": [],
+    "optional_dependencies": [],
+    "conflicts": [],
+    "migrations": {
+        "path": "migrations"
+    },
+    "views": {
+        "path": "views"
+    },
+    "assets": {
+        "path": "assets"
+    },
+    "data": {
+        "schema_version": 2,
+        "compatible_schema": ">=1",
+        "ownership": {
+            "tables": [
+                "mail_client_accounts",
+                "mail_client_folder_cache",
+                "mail_client_message_index",
+                "mail_client_sender_whitelist",
+                "mail_client_sync_progress"
+            ],
+            "settings": [],
+            "storage": [],
+            "uploads": [],
+            "jobs": []
+        }
+    },
+    "route_prefix": "mail-client",
+    "access_level": "user",
+    "channel": "stable",
+    "presentation": {
+        "icon": "bi-envelope-at",
+        "category": "Kommunikation"
+    }
+}

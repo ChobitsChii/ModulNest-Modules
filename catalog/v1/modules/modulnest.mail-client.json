@@ -1,0 +1,121 @@
+{
+    "schema_version": 2,
+    "id": "modulnest.mail-client",
+    "name": "Mail-Client",
+    "description": "Thunderbird-artiger Webmail-Client mit Multi-Account-IMAP, progressivem Hintergrund-Sync, Autoconfig/Autodiscover, 3-Pane-Layout und SMTP-Versand.",
+    "homepage": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "repository": "https://github.com/ChobitsChii/ModulNest-Modules",
+    "license": "MIT",
+    "authors": [
+        "ModulNest Team"
+    ],
+    "history": [
+        {
+            "version": "1.2.0",
+            "date": "2026-09-20",
+            "changes": [
+                "Kompaktes zweizeiliges Listen-Layout: Zweizeilige Darstellung in der Nachrichtenliste mit rechtsb\u00fcndigem \"An:\"-Empf\u00e4nger und dynamischer Betreff-K\u00fcrzung",
+                "Status- und Stern-Synchronisation: Sofortiges Umschalten von Gelesen/Ungelesen und Stern-Markierungen mit bidirektionaler IMAP-Flag-Synchronisation",
+                "Iframe-Vorschau und Scroll-Verbesserungen: Zuverl\u00e4ssige automatische H\u00f6henanpassung ohne doppelte Scrollbalken und fehlerfreies Umschalten zwischen fixiertem und mitscrollendem Header",
+                "Kalender-Seitenleiste: Anbindung an das Kalender-Modul zur Vorschau anstehender Termine der n\u00e4chsten 30 Tage inklusive automatischer Entfaltung von Serienterminen",
+                "Termin-Detail-Overlay: Klick auf einen Termin in der Seitenleiste \u00f6ffnet ein modales Detailfenster mit Kalenderfarbe, Datum, Uhrzeit, Wiederholung, Ort, Beschreibung und Direktlink zum Kalender",
+                "Typografische Ausrichtung: B\u00fcndige typografische Grundlinie f\u00fcr Zeit- und Titelangaben in der Kalenderleiste",
+                "Kalender-Aktualisierung: Manueller Refresh-Button sowie automatische Aktualisierung beim \u00d6ffnen der Leiste und bei Browser-Fokus"
+            ]
+        },
+        {
+            "version": "1.1.3",
+            "date": "2026-09-19",
+            "changes": [
+                "IMAP \"Missing search parameters\"-Fehler behoben: `fetchAllUids()` verwendet nun explizite Where-Klausel (`whereUid('1:*')`)",
+                "\"Alle Ordner laden...\"-Button bleibt nach dem Laden der Ordnerliste sichtbar",
+                "Active-Status eines Ordners bleibt nach dem Neuladen der Ordnerliste erhalten",
+                "\"Alle Ordner laden...\" Button kann beliebig oft geklickt werden ohne zu verschwinden"
+            ]
+        },
+        {
+            "version": "1.1.2",
+            "date": "2026-09-19",
+            "changes": [
+                "Fehlende Methode countForFolder() im MessageIndexRepository hinzugef\u00fcgt",
+                "Fehler \"Call to undefined method MessageIndexRepository::countForFolder()\" bei Nachrichten-Liste behoben",
+                "Nachrichtenliste und Sync-Fortschritts-Tracking funktionieren jetzt korrekt"
+            ]
+        },
+        {
+            "version": "1.1.1",
+            "date": "2026-09-19",
+            "changes": [
+                "Benutzerfreundlichere Fehlermeldung wenn kein Mail-Konto existiert aber E-Mail versendet werden soll",
+                "Leerer State: Klare Hinweise mit direktem \"Mail-Konto anlegen\"-Button statt leeres Dropdown",
+                "\"Neue Mail\" Button wird in Hauptansicht ausgeblendet wenn keine Konten existieren",
+                "Neue compose-empty.php View mit instruktivem Empty-State-Design"
+            ]
+        },
+        {
+            "version": "1.1.0",
+            "date": "2026-09-19",
+            "changes": [
+                "Autoconfig/Autodiscover: E-Mail-Konten k\u00f6nnen automatisch via MX-Records und Autoconfig-Endpunkte konfiguriert werden",
+                "Progressiver IMAP-Hintergrundsync mit Fortschritts-Tracking \u00fcber mail_client_sync_progress Tabelle",
+                "AJAX-basierter Sync-Status: Echtzeit-Updates zu laufenden Sync-Vorg\u00e4ngen",
+                "API-Endpunkte f\u00fcr Sync-Status (/api/sync/status) und Sync-Verfolgung (/api/sync/continue)",
+                "Verbesserte Fehlerbehandlung und Logging bei IMAP-Verbindungsproblemen",
+                "Robusterer Connection-Handler mit automatischem Reconnect bei IMAP-Trennungen",
+                "Optimierte Abfrageleistung f\u00fcr den Nachrichten-Index"
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "date": "2026-09-19",
+            "changes": [
+                "Thunderbird-artiges 3-Pane-Layout (Ordnerbaum | Nachrichten-Liste | Vorschau)",
+                "Multi-Account-IMAP-Unterst\u00fctzung: mehrere Konten pro Benutzer",
+                "IMAP-Sync mit UIDVALIDITY-Pr\u00fcfung: L\u00f6schungen/Verschiebungen auf anderen Ger\u00e4ten werden erkannt",
+                "Nur Header-Metadaten werden gecacht (kein Mail-Body-Cache)",
+                "Sichere HTML-Mail-Anzeige in sandboxed iframe \u2013 kein JavaScript m\u00f6glich",
+                "Externe Bilder standardm\u00e4\u00dfig blockiert, Absender-Whitelist (Sender/Domain)",
+                "SMTP-Versand via symfony/mailer",
+                "Rich-Text-Editor beim Verfassen (Bold, Italic, Underline, Listen, Links)",
+                "Sanitierung des ausgehenden Mail-Inhalts (kein JS/Schadcode m\u00f6glich)",
+                "Doppelklick \u00f6ffnet Mail in neuem Browser-Tab (Vollbild-Ansicht)",
+                "Vollst\u00e4ndig AJAX-basiert \u2013 kein Seitenneuladen bei Ordner-/Mail-Wechsel",
+                "Responsive: 3-Pane auf Desktop, Overlay-Panes auf Tablet/Mobile",
+                "Resizable Panes per Drag-and-Drop, gespeichert in localStorage",
+                "Passw\u00f6rter verschl\u00fcsselt in der DB (AES-256-GCM via SecretBox)",
+                "Anhang-Download direkt aus dem IMAP"
+            ]
+        }
+    ],
+    "releases": [
+        {
+            "version": "1.2.0",
+            "channel": "stable",
+            "release_notes": {
+                "summary": "Kompaktes zweizeiliges Listen-Layout: Zweizeilige Darstellung in der Nachrichtenliste mit rechtsb\u00fcndigem \"An:\"-Empf\u00e4nger und dynamischer Betreff-K\u00fcrzung",
+                "changes": [
+                    "Kompaktes zweizeiliges Listen-Layout: Zweizeilige Darstellung in der Nachrichtenliste mit rechtsb\u00fcndigem \"An:\"-Empf\u00e4nger und dynamischer Betreff-K\u00fcrzung",
+                    "Status- und Stern-Synchronisation: Sofortiges Umschalten von Gelesen/Ungelesen und Stern-Markierungen mit bidirektionaler IMAP-Flag-Synchronisation",
+                    "Iframe-Vorschau und Scroll-Verbesserungen: Zuverl\u00e4ssige automatische H\u00f6henanpassung ohne doppelte Scrollbalken und fehlerfreies Umschalten zwischen fixiertem und mitscrollendem Header",
+                    "Kalender-Seitenleiste: Anbindung an das Kalender-Modul zur Vorschau anstehender Termine der n\u00e4chsten 30 Tage inklusive automatischer Entfaltung von Serienterminen",
+                    "Termin-Detail-Overlay: Klick auf einen Termin in der Seitenleiste \u00f6ffnet ein modales Detailfenster mit Kalenderfarbe, Datum, Uhrzeit, Wiederholung, Ort, Beschreibung und Direktlink zum Kalender",
+                    "Typografische Ausrichtung: B\u00fcndige typografische Grundlinie f\u00fcr Zeit- und Titelangaben in der Kalenderleiste",
+                    "Kalender-Aktualisierung: Manueller Refresh-Button sowie automatische Aktualisierung beim \u00d6ffnen der Leiste und bei Browser-Fokus"
+                ]
+            },
+            "core": ">=2.1.0 <3.0.0",
+            "php": ">=8.3.0",
+            "dependencies": {},
+            "migration_count": 3,
+            "package": {
+                "location": "packages/modulnest.mail-client/1.2.0/modulnest.mail-client-1.2.0.zip",
+                "size": 97391,
+                "sha256": "44bb85aeff79a8b02d28acc5633a2d2dce2e57343ef1d310ff11d58e12d778f4"
+            },
+            "signing_key_id": "modulnest-release-2026-01",
+            "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
+            "signature": "46SA9q+IZvzHBwE5WLfWvkyd9pPVJoQvJUkggltduosPzZTj+x3Nn/ktzEN8I2RSZKKZCGcIQrdZSLS3pnBODg==",
+            "published_at": "2026-09-20T12:00:00+00:00"
+        }
+    ]
+}

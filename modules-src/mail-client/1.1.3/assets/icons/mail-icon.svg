@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="mailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2684ff" />
+      <stop offset="100%" stop-color="#0052cc" />
+    </linearGradient>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="96" ry="96" fill="url(#mailGrad)" />
+  <g fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="100" y="148" width="312" height="216" rx="28" ry="28" fill="#ffffff" fill-opacity="0.12" />
+    <path d="M 104 156 L 256 280 L 408 156" />
+    <path d="M 112 356 L 210 248" />
+    <path d="M 400 356 L 302 248" />
+  </g>
+</svg>
