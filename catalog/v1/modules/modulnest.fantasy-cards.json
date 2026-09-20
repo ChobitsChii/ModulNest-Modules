@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.0.1-beta.3",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.0.1-beta.2",
             "date": "2026-09-14",
             "changes": [
@@ -26,18 +33,12 @@
     ],
     "releases": [
         {
-            "version": "1.0.1-beta.2",
+            "version": "1.0.1-beta.3",
             "channel": "beta",
             "release_notes": {
-                "summary": "Native v2 module structure for FantasyCards.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Native v2 module structure for FantasyCards.",
-                    "Card sets overview and card set detail views.",
-                    "Booster claiming and opening system with interactive reveal animation.",
-                    "User collection view with rarity indicators and set completion progress.",
-                    "Admin management for sets, cards with inline editing, reordering, and mass upload (ZIP / image batch).",
-                    "Isolated schema migrations and demo seeds for native database setup.",
-                    "Package assets for frontend interactions (lightbox, booster animations, admin tools)."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.1.0 <3.0.0",
@@ -45,14 +46,14 @@
             "dependencies": {},
             "migration_count": 2,
             "package": {
-                "location": "packages/modulnest.fantasy-cards/1.0.1-beta.2/modulnest.fantasy-cards-1.0.1-beta.2.zip",
-                "size": 54162,
-                "sha256": "94654f777d064b8c33d04b8a6432aeef8f733aed40ba56e621dbb4a7fc2b52b9"
+                "location": "packages/modulnest.fantasy-cards/1.0.1-beta.3/modulnest.fantasy-cards-1.0.1-beta.3.zip",
+                "size": 54306,
+                "sha256": "a0f103e1f7500d2ab9aec5db48a541b7611a8cd4f6dc981e31717e838303b7e7"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "afRPW2HyspTs7YnBUiDHiRriBx3rpX6uCUy4iMuktuMiiSyQgAWCiD6e3ol61wR2D3SL0WjNFeo1IJ60CI+6AQ==",
-            "published_at": "2026-09-14T12:00:00+00:00"
+            "signature": "WpWUBO0xn9fgQt9zHA9TRRjwalduPksCOBoGpI6Ph/a8pIffICYC1F0NTM0l+kQVXVuB0EQWTaEG+oH/IK7nBQ==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.1.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.1.0",
             "date": "2026-09-08",
             "changes": [
@@ -36,14 +43,12 @@
     ],
     "releases": [
         {
-            "version": "1.1.0",
+            "version": "1.1.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
-                    "Speech-Modelle, Uploads, Jobs, WAV-Dateien, Ergebnisse und Logs in lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
-                    "PHP-Speech-Worker und laufende Jobs f\u00fcr Disable, Update, Retain und Purge abgesichert."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -51,14 +56,14 @@
             "dependencies": {},
             "migration_count": 0,
             "package": {
-                "location": "packages/modulnest.tools/1.1.0/modulnest.tools-1.1.0.zip",
-                "size": 37921,
-                "sha256": "22beeffbbf2c4f2968a6c88cc2abc1b8e2801e4673dcc1990403bb84527ee3e8"
+                "location": "packages/modulnest.tools/1.1.1/modulnest.tools-1.1.1.zip",
+                "size": 38056,
+                "sha256": "97a569de462931104dd9869ad118ef611a8b90ad29c1a5cbd718de93007a3974"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "FKpNHs7B7cVg1hkwfA/I+GJSTk2OmbZddFrJbJZq4k71KOMpx5d4JCNowEsTpBGwJ+d5AwCNGiDiiwRvSPlpDA==",
-            "published_at": "2026-09-08T12:00:00+00:00"
+            "signature": "H189FZnZ7HypUZu9s7daUjpRMlUWRxYngmx6SuKUmIprENtZ3qOVkT3w+Cpis+9Kn4FbWD/hVR613HWxrQMQAg==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

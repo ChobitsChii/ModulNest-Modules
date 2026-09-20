@@ -1,0 +1,73 @@
+{
+    "manifest_version": 2,
+    "id": "modulnest.calendar",
+    "name": "Kalender",
+    "description": "Kalender mit Terminverwaltung (Tages-, Wochen- und Monatsansicht), Serien- und Wiederholungsterminen sowie bidirektionaler Google Calendar Synchronisation.",
+    "version": "1.1.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ModulNest Team"
+        }
+    ],
+    "homepage": "https://github.com/ChobitsChii/ModulNest",
+    "repository": "https://github.com/ChobitsChii/ModulNest",
+    "requires": {
+        "core": ">=2.1.0 <3.0.0",
+        "php": ">=8.3.0",
+        "extensions": [
+            "pdo"
+        ]
+    },
+    "entrypoint": {
+        "class": "ModulNest\\Calendar\\CalendarModule",
+        "file": "src/CalendarModule.php"
+    },
+    "autoload": {
+        "psr4": {
+            "ModulNest\\Calendar\\": "src/"
+        }
+    },
+    "dependencies": [],
+    "optional_dependencies": [],
+    "conflicts": [],
+    "migrations": {
+        "path": "migrations"
+    },
+    "views": {
+        "path": "views"
+    },
+    "assets": {
+        "path": "assets"
+    },
+    "capabilities": {
+        "data_portability": "ModulNest\\Calendar\\Portability\\CalendarDataPortabilityProvider"
+    },
+    "data": {
+        "schema_version": 2,
+        "compatible_schema": ">=1 <=2",
+        "ownership": {
+            "tables": [
+                "calendars",
+                "calendar_appointments",
+                "calendar_google_accounts"
+            ],
+            "settings": [
+                "calendar.google_enabled",
+                "calendar.google_client_id",
+                "calendar.google_client_secret"
+            ],
+            "storage": [],
+            "uploads": [],
+            "jobs": []
+        }
+    },
+    "route_prefix": "calendar",
+    "access_level": "user",
+    "channel": "stable",
+    "presentation": {
+        "icon": "bi-calendar3",
+        "category": "Organisation",
+        "color": "#3b82f6"
+    }
+}

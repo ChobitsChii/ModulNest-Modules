@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.3.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.3.0",
             "date": "2026-09-08",
             "changes": [
@@ -57,13 +64,12 @@
     ],
     "releases": [
         {
-            "version": "1.3.0",
+            "version": "1.3.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Oberfl\u00e4che als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Oberfl\u00e4che als eigenst\u00e4ndiges Modul-v2-Paket ver\u00f6ffentlicht.",
-                    "Fachprovider werden dynamisch \u00fcber den neutralen DataPortability-Capability-Vertrag ermittelt."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -71,14 +77,14 @@
             "dependencies": {},
             "migration_count": 0,
             "package": {
-                "location": "packages/modulnest.data-portability/1.3.0/modulnest.data-portability-1.3.0.zip",
-                "size": 15171,
-                "sha256": "1ec5e56d7ecb6e129245c398263226ecd11899aad5211f1616d33c3a8794b5ff"
+                "location": "packages/modulnest.data-portability/1.3.1/modulnest.data-portability-1.3.1.zip",
+                "size": 15311,
+                "sha256": "22dbc54b798bea677b876a7ed0fce5801c02634dada09630640c2d038ecc4e08"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "VxL0PFFFR2p44eqmW4ST3NcSmmwP0es/7Kx4qd9wz5E/6px5k82TGh+CJP4Th74mtMot37Ny95fcVOEUgp6bAw==",
-            "published_at": "2026-09-08T12:00:00+00:00"
+            "signature": "e8bMzEE3BR4wYGRKquir9gGeQqJ4Yqr+3vU0/HRTUpPn+fbNi/yEkRMpK1R9pfNHoqOSGTRsfuvPi7aH9tvuCg==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

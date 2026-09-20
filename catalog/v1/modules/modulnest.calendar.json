@@ -11,6 +11,15 @@
     ],
     "history": [
         {
+            "version": "1.1.1",
+            "date": "2026-09-20",
+            "changes": [
+                "TypeError bei Intervall-Eingabe von Serienterminen in CalendarController behoben.",
+                "Automatische dynamische Anpassung der Endzeit im Terminformular implementiert.",
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert."
+            ]
+        },
+        {
             "version": "1.1.0",
             "date": "2026-09-15",
             "changes": [
@@ -104,17 +113,14 @@
     ],
     "releases": [
         {
-            "version": "1.1.0",
+            "version": "1.1.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Bidirektionale Google Calendar Integration via OAuth 2.0.",
+                "summary": "TypeError bei Intervall-Eingabe von Serienterminen in CalendarController behoben.",
                 "changes": [
-                    "Bidirektionale Google Calendar Integration via OAuth 2.0.",
-                    "Google Kalender im Thunderbird-Stil als eigenst\u00e4ndige Kalender mit Auswahl-Checkboxen.",
-                    "Admin-Bereich unter /admin/calendar zur Konfiguration von Google Client-ID und Client-Secret mit Weiterleitungs-URI und Schritt-f\u00fcr-Schritt-Anleitung.",
-                    "Unterst\u00fctzung von wiederkehrenden Terminen (t\u00e4glich, werktags, w\u00f6chentlich, monatlich, j\u00e4hrlich) nach Google Calendar Vorbild.",
-                    "Intelligenter Hintergrund-Sync mit Rate-Limiting (Spam-Schutz) und relativer Zeitstatus-Anzeige.",
-                    "Rolling-Window Optimierung und Vorabladen von Monaten f\u00fcr maximale Performance."
+                    "TypeError bei Intervall-Eingabe von Serienterminen in CalendarController behoben.",
+                    "Automatische dynamische Anpassung der Endzeit im Terminformular implementiert.",
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert."
                 ]
             },
             "core": ">=2.1.0 <3.0.0",
@@ -122,14 +128,14 @@
             "dependencies": {},
             "migration_count": 2,
             "package": {
-                "location": "packages/modulnest.calendar/1.1.0/modulnest.calendar-1.1.0.zip",
-                "size": 55247,
-                "sha256": "a0b8b5dcd223413a2948991ce5821a58211227ca18aadfe2c942b2c22dbfd1c6"
+                "location": "packages/modulnest.calendar/1.1.1/modulnest.calendar-1.1.1.zip",
+                "size": 56365,
+                "sha256": "3c2184a4176ebd6046d8b76493d520c13f1b43db2945807b38131a68017c9a53"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "L74dIo/ACq4wXTzeugLD45268ojSRkhKGS4tLUm68C0V8nO+OwQH4cw1lT/5lgDb64IhOgHZEi9zZTXHV5nqDA==",
-            "published_at": "2026-09-15T12:00:00+00:00"
+            "signature": "4Z/EXIuUInO6iECp97eq76aZumT3H+KT3EnEP6RX0OxH2ei74xYbMhZxLPwV3w+eh+TXBeKEtPGWkRsYuVDHCw==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ]
 }

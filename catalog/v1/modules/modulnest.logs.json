@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.2.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.2.0",
             "date": "2026-09-07",
             "changes": [
@@ -34,12 +41,12 @@
     ],
     "releases": [
         {
-            "version": "1.2.0",
+            "version": "1.2.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket ohne eigene Diagnosedaten ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket ohne eigene Diagnosedaten ver\u00f6ffentlicht."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -47,14 +54,14 @@
             "dependencies": {},
             "migration_count": 0,
             "package": {
-                "location": "packages/modulnest.logs/1.2.0/modulnest.logs-1.2.0.zip",
-                "size": 8339,
-                "sha256": "631501935aea2803d40a629ff2134cdb11c7f25c16ec44262e278e787c7a6897"
+                "location": "packages/modulnest.logs/1.2.1/modulnest.logs-1.2.1.zip",
+                "size": 8498,
+                "sha256": "71385425fb2821f8818cab31edfbf73481ac533f424dd66a64ec26445e982e9f"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "/7j83XJMLuyJyoaamd8PiSQaIXYdquv/fhPZbK4ZXBwy+kAcWfmPTEOv54yaz/QMyiZb6iPEiq5M+2aqikKBDQ==",
-            "published_at": "2026-09-07T12:00:00+00:00"
+            "signature": "iQIaNQolGHqCVb0GfRnKWjIe8iPtktefocJsTdxxI+cMKchVyZqLteZiGWz3TqaNWB+Iv/wmnpVYhGstGc+ECA==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

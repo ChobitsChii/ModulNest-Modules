@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.3.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.3.0",
             "date": "2026-09-08",
             "changes": [
@@ -59,14 +66,12 @@
     ],
     "releases": [
         {
-            "version": "1.3.0",
+            "version": "1.3.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                    "Synchronisierte Inhalte in lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
-                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -74,14 +79,14 @@
             "dependencies": {},
             "migration_count": 1,
             "package": {
-                "location": "packages/modulnest.wiki/1.3.0/modulnest.wiki-1.3.0.zip",
-                "size": 43504,
-                "sha256": "6c76ca1ca8e460c97dc28ba3fac9867a66fdf50e9a0676ce9506168f762fec5c"
+                "location": "packages/modulnest.wiki/1.3.1/modulnest.wiki-1.3.1.zip",
+                "size": 43648,
+                "sha256": "ebabac07d74ee4df2f2d0e8c1bc21eaabb9631065f7b1b648292ea23891ee61e"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "kA894WC4X+Htal7NjBputC0Kb8FSE/WCtXgM8ECz6IFRZrtwSqfg6cFjVraFcKoIAShgX4zlqOyWddip8YZFCg==",
-            "published_at": "2026-09-08T12:00:00+00:00"
+            "signature": "FL5ModepZT3h+hnLaWZzkNDRgq8fdzbMRWkoXfPijaCKUV21GbeoMX5b7UGopuqFs3Npo6/eJC+PEn03yDjXCA==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

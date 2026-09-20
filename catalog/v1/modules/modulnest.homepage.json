@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.1.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.1.0",
             "date": "2026-09-08",
             "changes": [
@@ -29,13 +36,12 @@
     ],
     "releases": [
         {
-            "version": "1.1.0",
+            "version": "1.1.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                    "Root-Seiten-Funktion \u00fcber die neutrale Core-Capability `root_page` angebunden."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -43,14 +49,14 @@
             "dependencies": {},
             "migration_count": 1,
             "package": {
-                "location": "packages/modulnest.homepage/1.1.0/modulnest.homepage-1.1.0.zip",
-                "size": 22659,
-                "sha256": "1f829d031b5b4bf14b3fd533929148fc06763b04a6ecd4e1a940f0d8ab200f89"
+                "location": "packages/modulnest.homepage/1.1.1/modulnest.homepage-1.1.1.zip",
+                "size": 22795,
+                "sha256": "fb73afc28218fc5624ef7b847b8aa4fabf8c06a755e6e8ec231a558a332c1a0d"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "Tv1mz+bvA4tCG48bvH/Q2HQCEBFwGQsyFb9rqfntnK3nUJgLVrOm6aQizn3GYbpeLTDr4By0iA4qT4caH5lYCw==",
-            "published_at": "2026-09-08T12:00:00+00:00"
+            "signature": "I9HaLTl2u2PWAdaDUJPQvFJYk/7hWDjdCB7I5Di9S61ym9Vx7HMsK6tM2Yf9JEImBdPbEOSeJc8G5as1b5cTDw==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

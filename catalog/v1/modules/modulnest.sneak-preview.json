@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.2.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.2.0",
             "date": "2026-09-08",
             "changes": [
@@ -43,14 +50,12 @@
     ],
     "releases": [
         {
-            "version": "1.2.0",
+            "version": "1.2.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit sicherer v1-Adoption ver\u00f6ffentlicht.",
-                    "Poster in privaten, lifecycle-verwalteten Modulstorage \u00fcberf\u00fchrt.",
-                    "DataPortability-Provider \u00fcber den neutralen Capability-Vertrag angebunden."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -58,14 +63,14 @@
             "dependencies": {},
             "migration_count": 2,
             "package": {
-                "location": "packages/modulnest.sneak-preview/1.2.0/modulnest.sneak-preview-1.2.0.zip",
-                "size": 27925,
-                "sha256": "5d6e98c2b1fec75ba43c11f3736f780a6620a1eb0f49bf4ec3e7755d1ac02a5b"
+                "location": "packages/modulnest.sneak-preview/1.2.1/modulnest.sneak-preview-1.2.1.zip",
+                "size": 28069,
+                "sha256": "a5764cf6c72560df43f47041c71606740efee6aecda7aee2b4bcb229580d20e0"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "+vM7b8jsfm1pto9rNkhgm8tKO0ODBTY5ObEcK5nEZZM73V3GwvX72cvW3etiOtrd+R6sEXE7yI9L0+AsI30DCw==",
-            "published_at": "2026-09-08T12:00:00+00:00"
+            "signature": "BRfk1g/jyH8bpNNHlbvwCr4POUvacvNxfAiIZHH+NB5xN+FXLc5n5hZudTKCMJjgtfCPf7rf4Y22WD+NNVlKCw==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {

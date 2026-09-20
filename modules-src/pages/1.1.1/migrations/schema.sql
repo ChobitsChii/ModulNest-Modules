@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS pages_entries (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(180) NOT NULL,
+    slug VARCHAR(180) NOT NULL,
+    content_markdown MEDIUMTEXT NOT NULL,
+    visibility VARCHAR(20) NOT NULL DEFAULT 'public',
+    menu_group VARCHAR(120) NOT NULL DEFAULT '',
+    show_in_header TINYINT(1) NOT NULL DEFAULT 0,
+    show_in_footer TINYINT(1) NOT NULL DEFAULT 0,
+    is_active TINYINT(1) NOT NULL DEFAULT 1,
+    sort_order INT NOT NULL DEFAULT 100,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    UNIQUE KEY uq_pages_entries_slug (slug),
+    KEY idx_pages_entries_visibility_active (visibility, is_active),
+    KEY idx_pages_entries_menu_group (menu_group),
+    KEY idx_pages_entries_header (show_in_header, visibility, is_active),
+    KEY idx_pages_entries_footer (show_in_footer, visibility, is_active),
+    KEY idx_pages_entries_sort_order (sort_order)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

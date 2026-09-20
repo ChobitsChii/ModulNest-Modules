@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.0.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.0.0",
             "date": "2026-09-14",
             "changes": [
@@ -32,17 +39,12 @@
     ],
     "releases": [
         {
-            "version": "1.0.0",
+            "version": "1.0.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Stabile Version 1.0.0 von ModulNest Mirror Manager.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Stabile Version 1.0.0 von ModulNest Mirror Manager.",
-                    "Automatisierte und manuelle Spiegelung von Modul-Repositories.",
-                    "Intelligenter SHA-256 Pre-Check zur Einsparung von I/O und Netzwerk-Traffic.",
-                    "Schutz vor parallelen Sync-Prozessen \u00fcber Concurrency-Locks.",
-                    "Kollisionsfreie dynamische Cron-Zeitslots basierend auf der Mirror-ID.",
-                    "Live-Status und Protokoll-Polling im Administrationsbereich."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.1.0 <3.0.0",
@@ -50,14 +52,14 @@
             "dependencies": {},
             "migration_count": 0,
             "package": {
-                "location": "packages/modulnest.mirror/1.0.0/modulnest.mirror-1.0.0.zip",
-                "size": 23348,
-                "sha256": "8b9523e87c6f5bb053869c17cf333863a90eed18ab0646e5ff3bdd289e716e58"
+                "location": "packages/modulnest.mirror/1.0.1/modulnest.mirror-1.0.1.zip",
+                "size": 23479,
+                "sha256": "c6a9de9f14e0445930065222f15eb553a708b410830245dd843166fd3c87be58"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "uxzLx+0H+ZdWJ1IpG771iuPvlBJa3elt0+ItKoN9ZwKrHbTCfXHG0TAr7wTMTgnwDL05Ya2xD41svz7eRIGzCg==",
-            "published_at": "2026-09-14T12:00:00+00:00"
+            "signature": "M/0EWY5Ur6W4Pqix7Je6XTz8QF8gKlf4ZGxYyez3YgIE2fK35CfQgjzlgi5X7A8rQNlXCCStaYe33ywLLJI6Ag==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ]
 }

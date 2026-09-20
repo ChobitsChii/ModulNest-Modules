@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.2.1",
+            "date": "2026-09-20",
+            "changes": [
+                "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
+            ]
+        },
+        {
             "version": "1.2.0",
             "date": "2026-09-08",
             "changes": [
@@ -43,14 +50,12 @@
     ],
     "releases": [
         {
-            "version": "1.2.0",
+            "version": "1.2.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Als eigenst\u00e4ndiges Modul-v2-Paket mit versionierter Tabellen-Ownership ver\u00f6ffentlicht.",
+                "summary": "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation.",
                 "changes": [
-                    "Als eigenst\u00e4ndiges Modul-v2-Paket mit versionierter Tabellen-Ownership ver\u00f6ffentlicht.",
-                    "DataPortability-Anbindung auf den neutralen Capability-Vertrag umgestellt.",
-                    "Bestehende Konten, Buchungen, Imports, Regeln und Migration-History k\u00f6nnen sicher adoptiert werden."
+                    "Modul-Icon und Kategorie-Definition im Manifest (module.json) verankert f\u00fcr modulare Pr\u00e4sentation."
                 ]
             },
             "core": ">=2.0.0-alpha.1 <3.0.0",
@@ -58,14 +63,14 @@
             "dependencies": {},
             "migration_count": 1,
             "package": {
-                "location": "packages/modulnest.banking/1.2.0/modulnest.banking-1.2.0.zip",
-                "size": 66823,
-                "sha256": "0b67584c129954885f5d8dd8652e24288e8a9817e7efb1ce2e0c066d33feaec9"
+                "location": "packages/modulnest.banking/1.2.1/modulnest.banking-1.2.1.zip",
+                "size": 66969,
+                "sha256": "da0807771389e6e6ee577819b1b0e024d7aeed6935f8fda2cc6806796d4a3a33"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "F8S3RzI718VOkdJ9/XNhFLps2P1FEoCvkmCbj2eaNlh5LOFjN07J71LagUqBBWo0lOAEKCIKizhQojQqP3iLCw==",
-            "published_at": "2026-09-08T12:00:00+00:00"
+            "signature": "fjorYB0aFue7q50aJhDbQJ7n4EJHqS9LXSzPgxjK4Mg4XuO2wxJOu4LL/CSM7mflbdjS0zJa2bEa8miUxVWwBQ==",
+            "published_at": "2026-09-20T12:00:00+00:00"
         }
     ],
     "adoption": {
