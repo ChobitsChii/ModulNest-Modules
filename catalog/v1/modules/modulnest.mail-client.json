@@ -11,6 +11,15 @@
     ],
     "history": [
         {
+            "version": "1.3.1",
+            "date": "2026-09-21",
+            "changes": [
+                "Absender-Whitelist / Externe Bilder: Normalisierung von E-Mail-Adressen und Dom\u00e4nen beim Speichern und Abgleichen behoben, sodass Bilder nach \"Absender vertrauen\" zuverl\u00e4ssig sofort geladen werden.",
+                "Whitelist-Verwaltung: Neuer Reiter \"Vertraute Absender\" in den Einstellungen zur \u00dcbersicht aller freigegebenen Absender und Dom\u00e4nen inklusive manueller Hinzuf\u00fcgen- und L\u00f6schen-Funktion.",
+                "Vollbild-Nachrichtenansicht: \"Absender vertrauen & neu laden\" nutzt jetzt asynchrones AJAX mit direktem Neuladen statt nackter JSON-Antwort."
+            ]
+        },
+        {
             "version": "1.3.0",
             "date": "2026-09-21",
             "changes": [
@@ -103,19 +112,14 @@
     ],
     "releases": [
         {
-            "version": "1.3.0",
+            "version": "1.3.1",
             "channel": "stable",
             "release_notes": {
-                "summary": "Moderne Baumstruktur f\u00fcr Ordner: Verschachtelte Unter- und Unter-Unterordner werden hierarchisch mit auf-/zuklappbarem Pfeil und Einr\u00fcckung \u00fcbersichtlich dargestellt.",
+                "summary": "Absender-Whitelist / Externe Bilder: Normalisierung von E-Mail-Adressen und Dom\u00e4nen beim Speichern und Abgleichen behoben, sodass Bilder nach \"Absender vertrauen\" zuverl\u00e4ssig sofort geladen werden.",
                 "changes": [
-                    "Moderne Baumstruktur f\u00fcr Ordner: Verschachtelte Unter- und Unter-Unterordner werden hierarchisch mit auf-/zuklappbarem Pfeil und Einr\u00fcckung \u00fcbersichtlich dargestellt.",
-                    "Zuverl\u00e4ssige Zeichen- & Umlaut-Dekodierung: IMAP Modified-UTF-7 in Ordnernamen sowie MIME-Header im Mail-Betreff und Absender/Empf\u00e4nger werden sauber nach UTF-8 dekodiert.",
-                    "ICS-Kalender-Integration: Zuverl\u00e4ssige Erkennung von Kalendereinladungen und .ics-Anh\u00e4ngen direkt in der E-Mail.",
-                    "Interaktiver Termin-Import: Modales Dialogfenster zur Detailansicht und Zielkalenderauswahl f\u00fcr den Import von Einzel- und Serienterminen in das Modulon-Kalender-Modul.",
-                    "Umsortierung von E-Mail-Konten: Konten k\u00f6nnen via Hoch/Runter-Schaltfl\u00e4chen und Drag & Drop in ihrer Reihenfolge angepasst werden, gespeichert \u00fcber sort_order.",
-                    "Multiple Absender-Aliase und Identit\u00e4ten: Beliebig viele Aliase/Identit\u00e4ten pro Mail-Konto konfigurierbar und ausw\u00e4hlbar beim Verfassen neuer E-Mails.",
-                    "Vollbild- & App-Modus Optimierungen: Unterseiten wie Kontoverwaltung und Verfassen blenden im PWA/App-Modus Modulon-Header und -Footer zuverl\u00e4ssig aus.",
-                    "Robuste IMAP- und Hintergrund-Synchronisation: Vermeidung von Notice-Eskalationen beim Script-Shutdown."
+                    "Absender-Whitelist / Externe Bilder: Normalisierung von E-Mail-Adressen und Dom\u00e4nen beim Speichern und Abgleichen behoben, sodass Bilder nach \"Absender vertrauen\" zuverl\u00e4ssig sofort geladen werden.",
+                    "Whitelist-Verwaltung: Neuer Reiter \"Vertraute Absender\" in den Einstellungen zur \u00dcbersicht aller freigegebenen Absender und Dom\u00e4nen inklusive manueller Hinzuf\u00fcgen- und L\u00f6schen-Funktion.",
+                    "Vollbild-Nachrichtenansicht: \"Absender vertrauen & neu laden\" nutzt jetzt asynchrones AJAX mit direktem Neuladen statt nackter JSON-Antwort."
                 ]
             },
             "core": ">=2.2.0 <3.0.0",
@@ -123,13 +127,13 @@
             "dependencies": {},
             "migration_count": 4,
             "package": {
-                "location": "packages/modulnest.mail-client/1.3.0/modulnest.mail-client-1.3.0.zip",
-                "size": 127150,
-                "sha256": "153173388cfeb22af25e5fd93645e066a58b9362aa8a43b873f94dbf946b506e"
+                "location": "packages/modulnest.mail-client/1.3.1/modulnest.mail-client-1.3.1.zip",
+                "size": 130255,
+                "sha256": "d840dbafdcfd2dcaf02c33e44c5ae3c63d8dc0c1a1d8de423aea02fcf96d6d9c"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "/aI1GuYffymp/LVm91yiItPidZho68GZmXiMvgxvFAtTkI+h42sR4+zuLyyTWnCVzkGl5W/fyRLZvBwh37RACw==",
+            "signature": "cYtSufCs1dpHTdDxdDndv4j1pfAutZ5B3Twn+kuztjsuMhNaeIjsH44fBvbdb3PfprViU/MOsYVBQZpsq6xgDw==",
             "published_at": "2026-09-21T12:00:00+00:00"
         }
     ]
