@@ -1,0 +1,1590 @@
+/*
+ * Mail-Client – Layout CSS
+ * Sidebar links, Mail-Liste oben über die restliche Breite, Mail-Ansicht darunter.
+ * Basiert auf Bootstrap 5.3 + Bootstrap Icons (beide bereits im Layout vorhanden)
+ * Dark-Mode über data-theme="dark" auf <html> (Modulon-Standard)
+ */
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Layout-Root
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mc-app {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px); /* Höhe minus Navbar + Footer */
+    min-height: 400px;
+    overflow: hidden;
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius-lg);
+    background: var(--bs-body-bg);
+}
+
+/* Toolbar oben */
+.mc-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    background: var(--bs-tertiary-bg);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.mc-toolbar-brand {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--bs-emphasis-color);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.mc-toolbar-search {
+    flex: 1;
+    min-width: 120px;
+    max-width: 300px;
+}
+
+.mc-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: auto;
+}
+
+/* Hauptbereich: Links Sidebar, rechts Content-Bereich */
+.mc-panes {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Linkes Pane – Ordnerbaum / Account-Sidebar
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mc-sidebar {
+    width: 230px;
+    min-width: 160px;
+    max-width: 420px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--bs-border-color);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--bs-tertiary-bg);
+    position: relative;
+    transition: width 0.05s;
+}
+
+.mc-sidebar::-webkit-scrollbar { width: 4px; }
+.mc-sidebar::-webkit-scrollbar-thumb { background: var(--bs-border-color); border-radius: 2px; }
+
+.mc-account-group {
+    margin-bottom: 0;
+}
+
+.mc-account-header {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem 0.35rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--bs-emphasis-color);
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid var(--bs-border-color);
+    position: sticky;
+    top: 0;
+    background: var(--bs-tertiary-bg);
+    z-index: 1;
+}
+
+.mc-account-header:hover {
+    background: var(--bs-secondary-bg);
+}
+
+.mc-account-toggle {
+    transition: transform 0.15s;
+}
+.mc-account-collapsed .mc-account-toggle {
+    transform: rotate(-90deg);
+}
+
+.mc-account-email {
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: var(--bs-secondary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.mc-account-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+}
+
+.mc-account-drag-handle {
+    opacity: 0.45;
+    transition: opacity 0.15s;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+.mc-account-header:hover .mc-account-drag-handle {
+    opacity: 0.9;
+}
+
+.mc-btn-move-account {
+    opacity: 0.55;
+    transition: opacity 0.15s, color 0.15s;
+    padding: 1px 2px !important;
+    line-height: 1;
+}
+
+.mc-btn-move-account:hover {
+    opacity: 1;
+    color: var(--bs-primary) !important;
+}
+
+.mc-btn-move-account:disabled {
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.mc-account-header.mc-account-dragging {
+    opacity: 0.4;
+    background: var(--bs-secondary-bg);
+}
+
+.mc-account-group.mc-drag-over-top {
+    border-top: 2px solid var(--bs-primary);
+}
+
+.mc-account-group.mc-drag-over-bottom {
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+.mc-folder-list {
+    list-style: none;
+    padding: 0.2rem 0;
+    margin: 0;
+}
+
+.mc-folder-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.32rem 0.75rem 0.32rem 0.5rem;
+    font-size: 0.84rem;
+    color: var(--bs-body-color);
+    cursor: pointer;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    transition: background 0.1s;
+    user-select: none;
+}
+
+.mc-folder-toggle,
+.mc-folder-toggle-spacer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 1px;
+}
+
+.mc-folder-toggle {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--bs-secondary-color);
+    cursor: pointer;
+    font-size: 0.68rem;
+    line-height: 1;
+    border-radius: 3px;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+
+.mc-folder-toggle:hover {
+    color: var(--bs-body-color);
+    background: var(--bs-secondary-bg);
+}
+
+.mc-folder-item.active .mc-folder-toggle {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.mc-folder-item.active .mc-folder-toggle:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.mc-folder-hidden {
+    display: none !important;
+}
+
+.mc-folder-item:hover {
+    background: var(--bs-secondary-bg);
+}
+
+.mc-folder-item.active {
+    background: var(--bs-primary);
+    color: #fff;
+}
+
+.mc-folder-item.active .mc-folder-icon,
+.mc-folder-item.active .mc-folder-unseen {
+    color: rgba(255,255,255,0.85);
+}
+
+.mc-folder-icon {
+    font-size: 0.95rem;
+    flex-shrink: 0;
+    color: var(--bs-secondary-color);
+}
+
+.mc-folder-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mc-folder-unseen {
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: var(--bs-primary);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 0.38rem;
+    min-width: 1.1rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.mc-folder-item.active .mc-folder-unseen {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Sidebar-Resizer (vertikaler Trenner) */
+.mc-sidebar-resizer {
+    width: 4px;
+    cursor: col-resize;
+    background: transparent;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+    transition: background 0.15s;
+}
+
+.mc-sidebar-resizer:hover,
+.mc-sidebar-resizer.dragging {
+    background: var(--bs-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Rechter Hauptbereich: Oben Mail-Liste, Unten Mail-Ansicht
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mc-main-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.mc-main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* ── Oberer Teil: Nachrichten-Liste (volle restliche Breite) ─────────────── */
+.mc-list-pane {
+    width: 100%;
+    height: 45%;
+    min-height: 130px;
+    max-height: 80%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bs-body-bg);
+    position: relative;
+}
+
+.mc-message-list.mc-list-loading {
+    opacity: 0.55;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+
+.mc-list-loading-overlay {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 25;
+    background: var(--bs-body-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 20px;
+    padding: 0.35rem 0.95rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    pointer-events: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--bs-emphasis-color);
+    animation: mc-fade-in 0.15s ease;
+}
+
+@keyframes mc-fade-in {
+    from { opacity: 0; transform: translate(-50%, -6px); }
+    to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.mc-list-header {
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    background: var(--bs-tertiary-bg);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mc-list-header-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mc-list-unseen-count {
+    font-size: 0.75rem;
+    color: var(--bs-secondary-color);
+}
+
+.mc-message-list {
+    flex: 1 1 0%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mc-message-list::-webkit-scrollbar { width: 6px; }
+.mc-message-list::-webkit-scrollbar-thumb { background: var(--bs-border-color); border-radius: 3px; }
+
+/* Nachrichten-Zeile im Breitformat */
+.mc-message-row {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid var(--bs-border-color-translucent);
+    cursor: pointer;
+    transition: background 0.1s;
+    position: relative;
+    user-select: none;
+}
+
+.mc-message-row:hover {
+    background: var(--bs-secondary-bg);
+}
+
+.mc-message-row.selected {
+    background: color-mix(in srgb, var(--bs-primary) 12%, var(--bs-body-bg));
+    border-left: 3px solid var(--bs-primary);
+    padding-left: calc(0.75rem - 3px);
+}
+
+.mc-msg-col-status {
+    width: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.mc-unread-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--bs-primary);
+    display: inline-block;
+}
+
+.mc-msg-icons {
+    display: inline-flex;
+    gap: 0.2rem;
+    font-size: 0.75rem;
+}
+
+.mc-msg-col-sender {
+    width: 220px;
+    min-width: 150px;
+    max-width: 280px;
+    font-size: 0.84rem;
+    color: var(--bs-emphasis-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.mc-message-row.unread .mc-msg-col-sender {
+    font-weight: 700;
+}
+
+.mc-msg-col-subject {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.84rem;
+    color: var(--bs-body-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mc-message-row.unread .mc-msg-col-subject {
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+}
+
+.mc-msg-col-date {
+    width: 95px;
+    min-width: 80px;
+    text-align: right;
+    font-size: 0.78rem;
+    color: var(--bs-secondary-color);
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* Pagination-Leiste */
+.mc-pagination-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.35rem 0.75rem;
+    border-top: 1px solid var(--bs-border-color);
+    background: var(--bs-tertiary-bg);
+    flex-shrink: 0;
+    gap: 0.5rem;
+}
+
+.mc-pagination-info {
+    font-size: 0.78rem;
+    color: var(--bs-secondary-color);
+    white-space: nowrap;
+}
+
+.mc-pagination-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+}
+
+.mc-page-btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.78rem;
+    line-height: 1.2;
+}
+
+.mc-page-input-wrap {
+    font-size: 0.78rem;
+    color: var(--bs-body-color);
+    margin: 0 0.3rem;
+}
+
+.mc-page-input {
+    width: 54px !important;
+    height: 26px !important;
+    padding: 0.1rem 0.25rem !important;
+    text-align: center;
+    font-size: 0.8rem !important;
+    display: inline-block;
+}
+
+/* Horizontaler Resizer zwischen Liste (oben) und Vorschau (unten) */
+.mc-list-resizer {
+    height: 6px;
+    width: 100%;
+    cursor: row-resize;
+    background: var(--bs-border-color);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+    transition: background 0.15s;
+}
+
+.mc-list-resizer:hover,
+.mc-list-resizer.dragging {
+    background: var(--bs-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Unterer Teil: Mail-Vorschau (UNTER der Liste)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mc-preview-pane {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 140px;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.mc-preview-scroll-wrapper {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Wenn Header gelöst ist (nicht fixiert): Wrapper scrollt Header + Mail */
+.mc-preview-pane:not(.mc-header-pinned) .mc-preview-scroll-wrapper {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Wenn Header fixiert ist (Standard): Wrapper scrollt NICHT, nur Iframe scrollt */
+.mc-preview-pane.mc-header-pinned .mc-preview-scroll-wrapper {
+    overflow: hidden !important;
+}
+
+.mc-preview-scroll-wrapper::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.mc-preview-scroll-wrapper::-webkit-scrollbar-track {
+    background: var(--bs-tertiary-bg);
+}
+.mc-preview-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: var(--bs-secondary-color);
+    opacity: 0.5;
+    border-radius: 4px;
+}
+.mc-preview-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-primary);
+}
+
+.mc-preview-header-wrap {
+    background: var(--bs-body-bg);
+    flex-shrink: 0;
+}
+
+.mc-preview-pane.mc-header-pinned .mc-preview-header-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.mc-btn-pin-header {
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    color: var(--bs-secondary-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    border: none;
+    background: transparent;
+    opacity: 0.75;
+    transition: opacity 0.15s, color 0.15s;
+}
+.mc-btn-pin-header:hover {
+    opacity: 1;
+    color: var(--bs-body-color);
+    background: var(--bs-tertiary-bg);
+}
+.mc-preview-pane.mc-header-pinned .mc-btn-pin-header {
+    color: var(--bs-primary);
+    opacity: 1;
+}
+
+/* Statusleiste am unteren Rand des Mail-Clients */
+.mc-sync-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.78rem;
+    background: var(--bs-tertiary-bg);
+    border-top: 1px solid var(--bs-border-color);
+    color: var(--bs-body-color);
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 32px;
+    transition: opacity 0.2s ease;
+}
+.mc-sync-bar.mc-sync-hidden {
+    display: none !important;
+}
+.mc-sync-bar.mc-sync-done {
+    color: var(--bs-success);
+}
+.mc-sync-bar.mc-sync-error {
+    color: var(--bs-danger);
+}
+.mc-sync-spinner {
+    display: inline-block;
+    width: 0.85rem;
+    height: 0.85rem;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: mc-spin 0.75s linear infinite;
+}
+@keyframes mc-spin {
+    to { transform: rotate(360deg); }
+}
+
+.mc-spin {
+    animation: mc-spin 0.75s linear infinite;
+    display: inline-block;
+}
+
+#mc-cols-dropdown-wrap .dropdown-item {
+    border-radius: 4px;
+}
+#mc-cols-dropdown-wrap .dropdown-item:hover {
+    background-color: var(--bs-tertiary-bg);
+}
+#mc-cols-dropdown-wrap .form-check-input {
+    cursor: pointer;
+}
+
+.mc-preview-header {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    background: var(--bs-body-bg);
+    flex-shrink: 0;
+}
+
+.mc-preview-subject {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+    margin-bottom: 0.45rem;
+    word-break: break-word;
+}
+
+.mc-preview-meta {
+    font-size: 0.82rem;
+    color: var(--bs-secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.mc-preview-meta-row {
+    display: flex;
+    gap: 0.35rem;
+}
+
+.mc-preview-meta-label {
+    font-weight: 500;
+    min-width: 2.5rem;
+    color: var(--bs-body-color);
+}
+
+.mc-preview-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 1rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    background: var(--bs-tertiary-bg);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+/* Mail-Body im Scroll-Wrapper */
+.mc-preview-body {
+    flex: 1 1 0%;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.mc-preview-pane:not(.mc-header-pinned) .mc-preview-body {
+    flex: 1 1 auto;
+    height: 100%;
+    min-height: 100%;
+    overflow: visible !important;
+    padding-bottom: 2rem;
+}
+
+.mc-preview-pane .mc-preview-body:has(.mc-preview-empty) {
+    height: 100% !important;
+    flex: 1 1 100% !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+}
+
+.mc-preview-pane.mc-header-pinned .mc-preview-body {
+    flex: 1 1 0% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    padding-bottom: 0 !important;
+}
+
+.mc-preview-iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    border: none;
+    background: #fff;
+    display: block;
+    flex: 1 1 0%;
+}
+
+.mc-preview-pane:not(.mc-header-pinned) .mc-preview-iframe {
+    min-height: 250px;
+    height: auto;
+    flex: none;
+}
+
+.mc-preview-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    color: var(--bs-secondary-color);
+    text-align: center;
+    padding: 2rem;
+    gap: 0.75rem;
+}
+
+.mc-preview-empty-icon {
+    font-size: 3rem;
+    opacity: 0.4;
+}
+
+/* Blockierte Bilder Banner */
+.mc-blocked-images-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: color-mix(in srgb, var(--bs-warning) 15%, var(--bs-body-bg));
+    border-bottom: 1px solid color-mix(in srgb, var(--bs-warning) 40%, transparent);
+    font-size: 0.8rem;
+    color: var(--bs-body-color);
+    flex-shrink: 0;
+}
+
+/* Anhänge-Leiste */
+.mc-attachments-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    padding: 0.4rem 1rem;
+    border-top: 1px solid var(--bs-border-color);
+    background: var(--bs-tertiary-bg);
+    flex-shrink: 0;
+}
+
+.mc-attachment-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--bs-secondary-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    font-size: 0.78rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: background 0.1s;
+}
+
+.mc-attachment-chip:hover {
+    background: var(--bs-body-bg);
+    color: var(--bs-primary);
+}
+
+/* Lade-Overlay */
+.mc-loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, var(--bs-body-bg) 80%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(2px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Vollbild-Mail-Ansicht (message-full.php – neuer Tab)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mc-fullview {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.mc-fullview-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.mc-fullview-subject {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.mc-fullview-body {
+    line-height: 1.6;
+}
+
+.mc-fullview-body iframe.mc-safe-iframe {
+    width: 100%;
+    border: none;
+    min-height: 400px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Compose-View (Rich-Text-Editor)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mc-compose-editor-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+    padding: 0.35rem 0.5rem;
+    border: 1px solid var(--bs-border-color);
+    border-bottom: none;
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+    background: var(--bs-tertiary-bg);
+}
+
+.mc-compose-editor-toolbar button {
+    padding: 0.2rem 0.45rem;
+    font-size: 0.82rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: var(--bs-border-radius-sm);
+    cursor: pointer;
+    color: var(--bs-body-color);
+    transition: background 0.1s, border-color 0.1s;
+}
+
+.mc-compose-editor-toolbar button:hover {
+    background: var(--bs-secondary-bg);
+    border-color: var(--bs-border-color);
+}
+
+.mc-compose-editor-toolbar button.active {
+    background: var(--bs-primary);
+    color: #fff;
+    border-color: transparent;
+}
+
+.mc-compose-editor-toolbar .mc-toolbar-sep {
+    width: 1px;
+    background: var(--bs-border-color);
+    margin: 0.1rem 0.15rem;
+    align-self: stretch;
+}
+
+.mc-compose-body {
+    min-height: 300px;
+    max-height: 60vh;
+    overflow-y: auto;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+    padding: 0.75rem;
+    outline: none;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+.mc-compose-body:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--bs-primary) 25%, transparent);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Responsive Breakpoints
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Tablet / schmale Bildschirme: Vorschau als Vollbild-Modal bei Klick */
+@media (max-width: 991px) {
+    .mc-preview-pane {
+        display: none;
+    }
+    .mc-preview-pane.mc-preview-active {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        z-index: 1050;
+        background: var(--bs-body-bg);
+    }
+    .mc-list-pane {
+        height: 100% !important;
+        max-height: 100%;
+        flex: 1;
+    }
+    .mc-list-resizer {
+        display: none;
+    }
+}
+
+/* Mobile: kein Ordnerbaum, Sidebar als Drawer */
+@media (max-width: 575px) {
+    .mc-sidebar {
+        display: none;
+    }
+    .mc-sidebar.mc-sidebar-open {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 1060;
+        width: 280px !important;
+        max-width: 90vw;
+    }
+    .mc-sidebar-resizer {
+        display: none;
+    }
+    .mc-app {
+        height: calc(100vh - 70px);
+    }
+    .mc-message-row {
+        flex-wrap: wrap;
+        gap: 0.2rem;
+    }
+    .mc-msg-col-sender {
+        width: calc(100% - 120px);
+        max-width: none;
+    }
+    .mc-msg-col-subject {
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+/* Geblockte Bilder im Iframe-Inhalt */
+.mc-blocked-image {
+    width: 48px !important;
+    height: 48px !important;
+    display: inline-block;
+    border: 1px dashed #999;
+    background: #f5f5f5 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23999' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath fill='%23999' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E") center center no-repeat;
+}
+
+
+/* Spalten-Kopfzeile & zusätzliche Spalten */
+.mc-list-cols-header {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.35rem 0.75rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    background: var(--bs-tertiary-bg);
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--bs-secondary-color);
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.mc-col-hdr {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mc-col-hdr-status { width: 28px; min-width: 28px; flex-shrink: 0; text-align: center; }
+.mc-col-hdr-sender { width: 200px; min-width: 130px; max-width: 260px; flex-shrink: 0; }
+.mc-col-hdr-recipient { width: 200px; min-width: 130px; max-width: 260px; flex-shrink: 0; }
+.mc-col-hdr-subject { flex: 1; min-width: 100px; }
+.mc-col-hdr-date { width: 95px; min-width: 80px; text-align: right; flex-shrink: 0; }
+.mc-col-hdr-size { width: 75px; min-width: 60px; text-align: right; flex-shrink: 0; }
+
+.mc-msg-col-recipient {
+    width: 200px;
+    min-width: 130px;
+    max-width: 260px;
+    font-size: 0.84rem;
+    color: var(--bs-emphasis-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.mc-message-row.unread .mc-msg-col-recipient {
+    font-weight: 600;
+}
+
+.mc-msg-col-size {
+    width: 75px;
+    min-width: 60px;
+    text-align: right;
+    font-size: 0.78rem;
+    color: var(--bs-secondary-color);
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   Maximieren & Frameless / Standalone App-Modus
+   ═════════════════════════════════════════════════════════════════════════════ */
+@media all and (display-mode: standalone), (display-mode: fullscreen), (display-mode: minimal-ui) {
+    nav.navbar,
+    footer,
+    .app-footer,
+    #admin-update-banner-container,
+    .admin-update-banner-shell {
+        display: none !important;
+    }
+}
+
+body.mc-app-mode nav.navbar,
+body.mc-maximized nav.navbar,
+body.mc-frameless nav.navbar,
+body.mc-app-mode footer,
+body.mc-maximized footer,
+body.mc-frameless footer,
+body.mc-app-mode .app-footer,
+body.mc-maximized .app-footer,
+body.mc-frameless .app-footer,
+body.mc-app-mode #admin-update-banner-container,
+body.mc-maximized #admin-update-banner-container,
+body.mc-frameless #admin-update-banner-container,
+body.mc-app-mode .admin-update-banner-shell,
+body.mc-maximized .admin-update-banner-shell,
+body.mc-frameless .admin-update-banner-shell {
+    display: none !important;
+}
+
+/* Mail-Hauptfenster im Vollbild- / Maximiert-Modus */
+body.mc-maximized:not(.mc-standalone-subpage),
+body.mc-frameless:not(.mc-standalone-subpage) {
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+body.mc-maximized:not(.mc-standalone-subpage) main,
+body.mc-frameless:not(.mc-standalone-subpage) main {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+}
+
+body.mc-maximized:not(.mc-standalone-subpage) .app-container,
+body.mc-frameless:not(.mc-standalone-subpage) .app-container,
+body.mc-maximized:not(.mc-standalone-subpage) .container,
+body.mc-frameless:not(.mc-standalone-subpage) .container,
+body.mc-maximized:not(.mc-standalone-subpage) .container-fluid,
+body.mc-frameless:not(.mc-standalone-subpage) .container-fluid {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body.mc-maximized .mc-app,
+body.mc-frameless .mc-app {
+    height: 100vh !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+/* Standalone Unterseiten (Account anlegen/bearbeiten, Mail verfassen etc.) */
+body.mc-standalone-subpage {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--bs-body-bg) !important;
+}
+
+body.mc-standalone-subpage main {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-y: visible !important;
+}
+
+body.mc-standalone-subpage .app-container,
+body.mc-standalone-subpage .container,
+body.mc-standalone-subpage .container-fluid {
+    width: 100% !important;
+    max-width: 1000px !important;
+    height: auto !important;
+    padding: 1.5rem 1rem 3.5rem !important;
+    margin: 0 auto !important;
+}
+
+.mc-subpage-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 0.5rem 3.5rem;
+}
+
+/* =========================================================================
+   Moderne 3-Spalten-Ansicht (Thunderbird-Stil)
+   ========================================================================= */
+
+.mc-app.mc-layout-3col .mc-main-area {
+    flex-direction: column !important;
+}
+
+.mc-app.mc-layout-3col .mc-main-content {
+    flex-direction: row !important;
+}
+
+.mc-app.mc-layout-3col .mc-list-pane {
+    width: 380px;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    min-width: 250px;
+    max-width: 650px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--bs-border-color);
+}
+
+.mc-app.mc-layout-3col .mc-list-resizer {
+    width: 5px;
+    height: 100% !important;
+    cursor: col-resize;
+    margin: 0;
+    border-left: 1px solid var(--bs-border-color);
+    background: transparent;
+}
+
+.mc-app.mc-layout-3col .mc-list-resizer:hover,
+.mc-app.mc-layout-3col .mc-list-resizer.dragging {
+    background: var(--bs-primary);
+}
+
+.mc-app.mc-layout-3col .mc-preview-pane {
+    flex: 1 1 0%;
+    min-width: 300px;
+    height: 100% !important;
+}
+
+/* =========================================================================
+   Zweizeiliges Listen-Layout (Cards / Thunderbird-Stil)
+   ========================================================================= */
+
+.mc-message-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.25rem !important;
+    padding: 0.5rem 0.75rem !important;
+    border-bottom: 1px solid var(--bs-border-color-translucent);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.1s;
+    position: relative;
+    background: transparent;
+    width: 100%;
+}
+
+.mc-message-card:hover {
+    background: var(--bs-secondary-bg);
+}
+
+.mc-message-card.selected {
+    background: color-mix(in srgb, var(--bs-primary) 12%, var(--bs-body-bg)) !important;
+    border-left: 3px solid var(--bs-primary);
+    padding-left: calc(0.75rem - 3px);
+}
+
+.mc-message-card.unread {
+    background: color-mix(in srgb, var(--bs-primary) 4%, transparent);
+}
+
+.mc-card-line-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.mc-card-sender {
+    color: var(--bs-emphasis-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.mc-message-card.unread .mc-card-sender {
+    font-weight: 700;
+}
+
+.mc-card-date {
+    font-size: 0.74rem;
+    color: var(--bs-secondary-color);
+    flex-shrink: 0;
+}
+
+.mc-card-line-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.mc-card-subject {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--bs-secondary-color);
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.mc-message-card.unread .mc-card-subject {
+    color: var(--bs-body-color);
+    font-weight: 600;
+}
+
+.mc-card-line-2-right {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.mc-card-recipient-badge {
+    font-size: 0.72rem;
+    padding: 0.1rem 0.38rem;
+    border-radius: 4px;
+    background: var(--bs-tertiary-bg);
+    color: var(--bs-secondary-color);
+    border: 1px solid var(--bs-border-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: normal;
+    white-space: nowrap;
+    max-width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+/* Stern-Button (Flagged) */
+.mc-star-toggle {
+    border: none;
+    background: transparent;
+    padding: 0 0.15rem;
+    color: var(--bs-secondary-color);
+    font-size: 0.92rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.15s, color 0.15s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.mc-star-toggle:hover {
+    transform: scale(1.2);
+    color: #ffc107 !important;
+}
+
+.mc-star-toggle i.bi-star-fill,
+.mc-star-toggle.active i {
+    color: #ffc107 !important;
+}
+
+/* Bei Card-Modus Spaltenheader & Spaltendropdown verbergen */
+.mc-app.mc-listmode-cards #mc-list-cols-header,
+.mc-app.mc-listmode-cards #mc-cols-dropdown-wrap {
+    display: none !important;
+}
+
+/* =========================================================================
+   Kalender-Seitenleiste (Termine rechts)
+   ========================================================================= */
+
+.mc-calendar-resizer {
+    width: 5px;
+    height: 100%;
+    cursor: col-resize;
+    background: transparent;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+    border-left: 1px solid var(--bs-border-color);
+    transition: background 0.15s;
+}
+
+.mc-calendar-resizer:hover,
+.mc-calendar-resizer.dragging {
+    background: var(--bs-primary);
+}
+
+.mc-calendar-sidebar {
+    width: 270px;
+    min-width: 220px;
+    max-width: 450px;
+    height: 100%;
+    background: var(--bs-body-bg);
+    border-left: 1px solid var(--bs-border-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.mc-cal-header {
+    background: var(--bs-tertiary-bg);
+    flex-shrink: 0;
+}
+
+.mc-cal-today-num {
+    font-size: 2.1rem;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.mc-cal-group-title {
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--bs-secondary-color);
+    padding: 0.4rem 0.25rem 0.2rem;
+    margin-top: 0.35rem;
+}
+
+.mc-cal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.35rem 0.45rem;
+    border-radius: var(--bs-border-radius-sm);
+    transition: background 0.12s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    user-select: none;
+}
+
+.mc-cal-item:hover,
+.mc-cal-item:focus-visible {
+    background: var(--bs-secondary-bg);
+    outline: none;
+}
+
+.mc-cal-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 0.32rem;
+    flex-shrink: 0;
+}
+
+.mc-cal-content {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.mc-cal-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.45rem;
+    min-width: 0;
+    line-height: 1.35;
+}
+
+.mc-cal-time {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--bs-emphasis-color);
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.mc-cal-title {
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--bs-body-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex: 1;
+}
+
+.mc-cal-location {
+    font-size: 0.72rem;
+    color: var(--bs-secondary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+    margin-top: 0.15rem;
+}
+
+
+/* =========================================================================
+   Kalender-Einladungen / Termin-Erkennung (.ics) in E-Mails
+   ========================================================================= */
+
+.mc-calendar-invite-card {
+    border: 1px solid var(--bs-primary-border-subtle, #b6d4fe);
+    background: var(--bs-primary-bg-subtle, #cfe2ff);
+    color: var(--bs-emphasis-color);
+    margin-bottom: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--bs-border-radius-lg, 0.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+[data-bs-theme="dark"] .mc-calendar-invite-card {
+    background: rgba(13, 110, 253, 0.15);
+    border-color: rgba(13, 110, 253, 0.35);
+}
+
+.mc-cal-invite-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.mc-cal-invite-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bs-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.mc-cal-invite-meta {
+    flex: 1;
+    min-width: 200px;
+}
+
+.mc-cal-invite-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--bs-emphasis-color);
+    margin-bottom: 0.2rem;
+}
+
+.mc-cal-invite-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem;
+    font-size: 0.82rem;
+    color: var(--bs-secondary-color);
+}
+
+.mc-cal-invite-details span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.mc-cal-invite-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.mc-att-import-cal-btn {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.75rem;
+    border-radius: var(--bs-border-radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}

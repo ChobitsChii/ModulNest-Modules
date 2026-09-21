@@ -11,6 +11,20 @@
     ],
     "history": [
         {
+            "version": "1.3.0",
+            "date": "2026-09-21",
+            "changes": [
+                "Moderne Baumstruktur f\u00fcr Ordner: Verschachtelte Unter- und Unter-Unterordner werden hierarchisch mit auf-/zuklappbarem Pfeil und Einr\u00fcckung \u00fcbersichtlich dargestellt.",
+                "Zuverl\u00e4ssige Zeichen- & Umlaut-Dekodierung: IMAP Modified-UTF-7 in Ordnernamen sowie MIME-Header im Mail-Betreff und Absender/Empf\u00e4nger werden sauber nach UTF-8 dekodiert.",
+                "ICS-Kalender-Integration: Zuverl\u00e4ssige Erkennung von Kalendereinladungen und .ics-Anh\u00e4ngen direkt in der E-Mail.",
+                "Interaktiver Termin-Import: Modales Dialogfenster zur Detailansicht und Zielkalenderauswahl f\u00fcr den Import von Einzel- und Serienterminen in das Modulon-Kalender-Modul.",
+                "Umsortierung von E-Mail-Konten: Konten k\u00f6nnen via Hoch/Runter-Schaltfl\u00e4chen und Drag & Drop in ihrer Reihenfolge angepasst werden, gespeichert \u00fcber sort_order.",
+                "Multiple Absender-Aliase und Identit\u00e4ten: Beliebig viele Aliase/Identit\u00e4ten pro Mail-Konto konfigurierbar und ausw\u00e4hlbar beim Verfassen neuer E-Mails.",
+                "Vollbild- & App-Modus Optimierungen: Unterseiten wie Kontoverwaltung und Verfassen blenden im PWA/App-Modus Modulon-Header und -Footer zuverl\u00e4ssig aus.",
+                "Robuste IMAP- und Hintergrund-Synchronisation: Vermeidung von Notice-Eskalationen beim Script-Shutdown."
+            ]
+        },
+        {
             "version": "1.2.0",
             "date": "2026-09-20",
             "changes": [
@@ -89,33 +103,34 @@
     ],
     "releases": [
         {
-            "version": "1.2.0",
+            "version": "1.3.0",
             "channel": "stable",
             "release_notes": {
-                "summary": "Kompaktes zweizeiliges Listen-Layout: Zweizeilige Darstellung in der Nachrichtenliste mit rechtsb\u00fcndigem \"An:\"-Empf\u00e4nger und dynamischer Betreff-K\u00fcrzung",
+                "summary": "Moderne Baumstruktur f\u00fcr Ordner: Verschachtelte Unter- und Unter-Unterordner werden hierarchisch mit auf-/zuklappbarem Pfeil und Einr\u00fcckung \u00fcbersichtlich dargestellt.",
                 "changes": [
-                    "Kompaktes zweizeiliges Listen-Layout: Zweizeilige Darstellung in der Nachrichtenliste mit rechtsb\u00fcndigem \"An:\"-Empf\u00e4nger und dynamischer Betreff-K\u00fcrzung",
-                    "Status- und Stern-Synchronisation: Sofortiges Umschalten von Gelesen/Ungelesen und Stern-Markierungen mit bidirektionaler IMAP-Flag-Synchronisation",
-                    "Iframe-Vorschau und Scroll-Verbesserungen: Zuverl\u00e4ssige automatische H\u00f6henanpassung ohne doppelte Scrollbalken und fehlerfreies Umschalten zwischen fixiertem und mitscrollendem Header",
-                    "Kalender-Seitenleiste: Anbindung an das Kalender-Modul zur Vorschau anstehender Termine der n\u00e4chsten 30 Tage inklusive automatischer Entfaltung von Serienterminen",
-                    "Termin-Detail-Overlay: Klick auf einen Termin in der Seitenleiste \u00f6ffnet ein modales Detailfenster mit Kalenderfarbe, Datum, Uhrzeit, Wiederholung, Ort, Beschreibung und Direktlink zum Kalender",
-                    "Typografische Ausrichtung: B\u00fcndige typografische Grundlinie f\u00fcr Zeit- und Titelangaben in der Kalenderleiste",
-                    "Kalender-Aktualisierung: Manueller Refresh-Button sowie automatische Aktualisierung beim \u00d6ffnen der Leiste und bei Browser-Fokus"
+                    "Moderne Baumstruktur f\u00fcr Ordner: Verschachtelte Unter- und Unter-Unterordner werden hierarchisch mit auf-/zuklappbarem Pfeil und Einr\u00fcckung \u00fcbersichtlich dargestellt.",
+                    "Zuverl\u00e4ssige Zeichen- & Umlaut-Dekodierung: IMAP Modified-UTF-7 in Ordnernamen sowie MIME-Header im Mail-Betreff und Absender/Empf\u00e4nger werden sauber nach UTF-8 dekodiert.",
+                    "ICS-Kalender-Integration: Zuverl\u00e4ssige Erkennung von Kalendereinladungen und .ics-Anh\u00e4ngen direkt in der E-Mail.",
+                    "Interaktiver Termin-Import: Modales Dialogfenster zur Detailansicht und Zielkalenderauswahl f\u00fcr den Import von Einzel- und Serienterminen in das Modulon-Kalender-Modul.",
+                    "Umsortierung von E-Mail-Konten: Konten k\u00f6nnen via Hoch/Runter-Schaltfl\u00e4chen und Drag & Drop in ihrer Reihenfolge angepasst werden, gespeichert \u00fcber sort_order.",
+                    "Multiple Absender-Aliase und Identit\u00e4ten: Beliebig viele Aliase/Identit\u00e4ten pro Mail-Konto konfigurierbar und ausw\u00e4hlbar beim Verfassen neuer E-Mails.",
+                    "Vollbild- & App-Modus Optimierungen: Unterseiten wie Kontoverwaltung und Verfassen blenden im PWA/App-Modus Modulon-Header und -Footer zuverl\u00e4ssig aus.",
+                    "Robuste IMAP- und Hintergrund-Synchronisation: Vermeidung von Notice-Eskalationen beim Script-Shutdown."
                 ]
             },
-            "core": ">=2.1.0 <3.0.0",
+            "core": ">=2.2.0 <3.0.0",
             "php": ">=8.3.0",
             "dependencies": {},
-            "migration_count": 3,
+            "migration_count": 4,
             "package": {
-                "location": "packages/modulnest.mail-client/1.2.0/modulnest.mail-client-1.2.0.zip",
-                "size": 97391,
-                "sha256": "44bb85aeff79a8b02d28acc5633a2d2dce2e57343ef1d310ff11d58e12d778f4"
+                "location": "packages/modulnest.mail-client/1.3.0/modulnest.mail-client-1.3.0.zip",
+                "size": 127150,
+                "sha256": "153173388cfeb22af25e5fd93645e066a58b9362aa8a43b873f94dbf946b506e"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "46SA9q+IZvzHBwE5WLfWvkyd9pPVJoQvJUkggltduosPzZTj+x3Nn/ktzEN8I2RSZKKZCGcIQrdZSLS3pnBODg==",
-            "published_at": "2026-09-20T12:00:00+00:00"
+            "signature": "/aI1GuYffymp/LVm91yiItPidZho68GZmXiMvgxvFAtTkI+h42sR4+zuLyyTWnCVzkGl5W/fyRLZvBwh37RACw==",
+            "published_at": "2026-09-21T12:00:00+00:00"
         }
     ]
 }

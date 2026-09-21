@@ -1,9 +1,9 @@
 {
     "schema_version": 1,
     "catalog_id": "modulnest.official",
-    "sequence": 10,
-    "generated_at": "2026-09-20T17:28:05+00:00",
-    "expires_at": "2027-09-20T17:28:04+00:00",
+    "sequence": 11,
+    "generated_at": "2026-09-21T11:22:46+00:00",
+    "expires_at": "2027-09-21T11:22:45+00:00",
     "signing_keys": [
         {
             "key_id": "modulnest-root-2026-01",
@@ -60,7 +60,7 @@
         {
             "id": "modulnest.mail-client",
             "path": "catalog/v1/modules/modulnest.mail-client.json",
-            "sha256": "c6a59abd6c22a62b7946a380b53eb215095b47378822b46f303a598577019ee6"
+            "sha256": "cbf7b1dafcdbdeb7b01e2103cc6a2313f408f76c21e3f910451e3eddab4742c0"
         },
         {
             "id": "modulnest.mirror",
