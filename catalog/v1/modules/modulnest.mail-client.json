@@ -11,6 +11,13 @@
     ],
     "history": [
         {
+            "version": "1.3.2",
+            "date": "2026-09-21",
+            "changes": [
+                "Fehlerbehebung Ordner-Cache: Fehlende Methoden findFolder, listFoldersForAccount und upsertFolder in FolderCacheRepository wiederhergestellt, wodurch der Aufruf von /mail-client nicht mehr fehlschl\u00e4gt."
+            ]
+        },
+        {
             "version": "1.3.1",
             "date": "2026-09-21",
             "changes": [
@@ -112,14 +119,12 @@
     ],
     "releases": [
         {
-            "version": "1.3.1",
+            "version": "1.3.2",
             "channel": "stable",
             "release_notes": {
-                "summary": "Absender-Whitelist / Externe Bilder: Normalisierung von E-Mail-Adressen und Dom\u00e4nen beim Speichern und Abgleichen behoben, sodass Bilder nach \"Absender vertrauen\" zuverl\u00e4ssig sofort geladen werden.",
+                "summary": "Fehlerbehebung Ordner-Cache: Fehlende Methoden findFolder, listFoldersForAccount und upsertFolder in FolderCacheRepository wiederhergestellt, wodurch der Aufruf von /mail-client nicht mehr fehlschl\u00e4gt.",
                 "changes": [
-                    "Absender-Whitelist / Externe Bilder: Normalisierung von E-Mail-Adressen und Dom\u00e4nen beim Speichern und Abgleichen behoben, sodass Bilder nach \"Absender vertrauen\" zuverl\u00e4ssig sofort geladen werden.",
-                    "Whitelist-Verwaltung: Neuer Reiter \"Vertraute Absender\" in den Einstellungen zur \u00dcbersicht aller freigegebenen Absender und Dom\u00e4nen inklusive manueller Hinzuf\u00fcgen- und L\u00f6schen-Funktion.",
-                    "Vollbild-Nachrichtenansicht: \"Absender vertrauen & neu laden\" nutzt jetzt asynchrones AJAX mit direktem Neuladen statt nackter JSON-Antwort."
+                    "Fehlerbehebung Ordner-Cache: Fehlende Methoden findFolder, listFoldersForAccount und upsertFolder in FolderCacheRepository wiederhergestellt, wodurch der Aufruf von /mail-client nicht mehr fehlschl\u00e4gt."
                 ]
             },
             "core": ">=2.2.0 <3.0.0",
@@ -127,13 +132,13 @@
             "dependencies": {},
             "migration_count": 4,
             "package": {
-                "location": "packages/modulnest.mail-client/1.3.1/modulnest.mail-client-1.3.1.zip",
-                "size": 130255,
-                "sha256": "d840dbafdcfd2dcaf02c33e44c5ae3c63d8dc0c1a1d8de423aea02fcf96d6d9c"
+                "location": "packages/modulnest.mail-client/1.3.2/modulnest.mail-client-1.3.2.zip",
+                "size": 130522,
+                "sha256": "c43e0b5431c496194929d1026a9412e3a74330ad3b0f9ac6cff56d7f745cdd1e"
             },
             "signing_key_id": "modulnest-release-2026-01",
             "signing_fingerprint": "e328756b8b21755440df968fc341c1606bda3c8897bda91c1b3d2bfa254db93e",
-            "signature": "cYtSufCs1dpHTdDxdDndv4j1pfAutZ5B3Twn+kuztjsuMhNaeIjsH44fBvbdb3PfprViU/MOsYVBQZpsq6xgDw==",
+            "signature": "GC6I40MEwym7yEwosnjhfCyRRAAuqZWCxzgt/9eAJk10PHnDj+n4YAJf2GQecjZE5WqT0BqssN+tIi4nKf3WAA==",
             "published_at": "2026-09-21T12:00:00+00:00"
         }
     ]
